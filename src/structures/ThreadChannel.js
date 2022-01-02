@@ -17,6 +17,20 @@ class ThreadChannel extends Channel {
     super(guild?.client ?? client, data, false);
 
     /**
+     * The time the channel was created at
+     * <info>For public threads, this will be the creation date of the message the thread was created on.</info>
+     * @type {Date}
+     * @name ThreadChannel#createdAt
+     */
+
+    /**
+     * The timestamp the channel was created at
+     * <info>For public threads, this will be the creation timestamp of the message the thread was created on.</info>
+     * @type {number}
+     * @name ThreadChannel#createdTimestamp
+     */
+
+    /**
      * The guild the thread is in
      * @type {Guild}
      */
