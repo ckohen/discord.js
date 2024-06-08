@@ -47,6 +47,7 @@
 		"@discordjs/scripts": "workspace:^",
 		"@vercel/blob": "^0.22.3",
 		"@vercel/postgres": "^0.8.0",
+		"commander": "^12.1.0",
 		"meilisearch": "^0.38.0",
 		"p-limit": "^5.0.0",
 		"tslib": "^2.6.2",
