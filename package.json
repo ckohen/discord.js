@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@ckohen/discord.js",
+	"name": "@ckohen/discord.js-workspace",
 	"version": "0.0.0",
 	"description": "A powerful library for interacting with the Discord API",
 	"private": true,
