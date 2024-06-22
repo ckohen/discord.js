@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/check-param-names */
 
-import { type RequestData, type REST, makeURLSearchParams } from '@discordjs/rest';
+import { type RequestData, type REST, makeURLSearchParams } from '@ckohen/rest';
 import {
 	Routes,
 	RouteBases,

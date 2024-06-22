@@ -1,7 +1,7 @@
 'use strict';
 
-const { DiscordAPIError } = require('@discordjs/rest');
-const { lazy } = require('@discordjs/util');
+const { DiscordAPIError } = require('@ckohen/rest');
+const { lazy } = require('@ckohen/util');
 const { RESTJSONErrorCodes, ChannelFlags, ChannelType, PermissionFlagsBits, Routes } = require('discord-api-types/v10');
 const { BaseChannel } = require('./BaseChannel');
 const getThreadOnlyChannel = lazy(() => require('./ThreadOnlyChannel'));

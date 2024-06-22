@@ -1,5 +1,5 @@
 import { Blob } from 'node:buffer';
-import { shouldUseGlobalFetchAndWebSocket } from '@discordjs/util';
+import { shouldUseGlobalFetchAndWebSocket } from '@ckohen/util';
 import { FormData } from 'undici';
 import { setDefaultStrategy } from './environment.js';
 import { makeRequest } from './strategies/undiciRequest.js';

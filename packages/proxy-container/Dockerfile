@@ -15,11 +15,11 @@ WORKDIR /usr/proxy-container
 FROM base AS builder
 
 RUN pnpm install --frozen-lockfile --ignore-scripts
-RUN pnpm exec turbo run build --filter='@discordjs/proxy-container...'
+RUN pnpm exec turbo run build --filter='@ckohen/proxy-container...'
 
 FROM builder AS pruned
 
-RUN pnpm --filter='@discordjs/proxy-container' --prod deploy pruned
+RUN pnpm --filter='@ckohen/proxy-container' --prod deploy pruned
 
 FROM node:18-alpine AS proxy
 

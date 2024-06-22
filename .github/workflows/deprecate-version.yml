@@ -7,19 +7,19 @@ on:
         required: true
         type: choice
         options:
-          - '@discordjs/brokers'
-          - '@discordjs/builders'
-          - '@discordjs/collection'
-          - '@discordjs/core'
+          - '@ckohen/brokers'
+          - '@ckohen/builders'
+          - '@ckohen/collection'
+          - '@ckohen/core'
           - 'create-discord-bot'
-          - '@discordjs/formatters'
+          - '@ckohen/formatters'
           - 'discord.js'
-          - '@discordjs/next'
-          - '@discordjs/proxy'
-          - '@discordjs/rest'
-          - '@discordjs/util'
-          - '@discordjs/voice'
-          - '@discordjs/ws'
+          - '@ckohen/next'
+          - '@ckohen/proxy'
+          - '@ckohen/rest'
+          - '@ckohen/util'
+          - '@ckohen/voice'
+          - '@ckohen/ws'
       version:
         description: Version(s)
         required: true
@@ -31,7 +31,7 @@ on:
 jobs:
   deprecate:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'discordjs'
+    if: github.repository_owner == 'ckohen'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

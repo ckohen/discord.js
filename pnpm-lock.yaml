@@ -90,12 +90,12 @@ importers:
 
   apps/guide:
     dependencies:
+      '@ckohen/ui':
+        specifier: workspace:^
+        version: link:../../packages/ui
       '@code-hike/mdx':
         specifier: ^0.9.0
         version: 0.9.0(encoding@0.1.13)(react@18.3.1)
-      '@discordjs/ui':
-        specifier: workspace:^
-        version: link:../../packages/ui
       '@react-icons/all-files':
         specifier: ^4.1.0
         version: 4.1.0(react@18.3.1)
@@ -395,7 +395,7 @@ importers:
       '@actions/glob':
         specifier: ^0.4.0
         version: 0.4.0
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@vercel/blob':
@@ -462,7 +462,7 @@ importers:
 
   packages/api-extractor:
     dependencies:
-      '@discordjs/api-extractor-model':
+      '@ckohen/api-extractor-model':
         specifier: workspace:^
         version: link:../api-extractor-model
       '@microsoft/tsdoc':
@@ -587,7 +587,7 @@ importers:
 
   packages/api-extractor-utils:
     dependencies:
-      '@discordjs/api-extractor-model':
+      '@ckohen/api-extractor-model':
         specifier: workspace:^
         version: link:../api-extractor-model
       '@microsoft/tsdoc':
@@ -634,10 +634,10 @@ importers:
         specifier: ^5.4.1
         version: 5.4.1
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -682,10 +682,10 @@ importers:
 
   packages/builders:
     dependencies:
-      '@discordjs/formatters':
+      '@ckohen/formatters':
         specifier: workspace:^
         version: link:../formatters
-      '@discordjs/util':
+      '@ckohen/util':
         specifier: workspace:^
         version: link:../util
       '@sapphire/shapeshift':
@@ -704,10 +704,10 @@ importers:
         specifier: ^2.6.2
         version: 2.6.2
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -752,10 +752,10 @@ importers:
 
   packages/collection:
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -800,13 +800,13 @@ importers:
 
   packages/core:
     dependencies:
-      '@discordjs/rest':
+      '@ckohen/rest':
         specifier: workspace:^
         version: link:../rest
-      '@discordjs/util':
+      '@ckohen/util':
         specifier: workspace:^
         version: link:../util
-      '@discordjs/ws':
+      '@ckohen/ws':
         specifier: workspace:^
         version: link:../ws
       '@sapphire/snowflake':
@@ -819,10 +819,10 @@ importers:
         specifier: 0.37.90
         version: 0.37.90
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -883,7 +883,7 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
       '@favware/cliff-jumper':
@@ -931,24 +931,24 @@ importers:
 
   packages/discord.js:
     dependencies:
-      '@discordjs/builders':
+      '@ckohen/builders':
         specifier: workspace:^
         version: link:../builders
+      '@ckohen/formatters':
+        specifier: workspace:^
+        version: link:../formatters
+      '@ckohen/rest':
+        specifier: workspace:^
+        version: link:../rest
+      '@ckohen/util':
+        specifier: workspace:^
+        version: link:../util
+      '@ckohen/ws':
+        specifier: workspace:^
+        version: link:../ws
       '@discordjs/collection':
         specifier: 1.5.3
         version: 1.5.3
-      '@discordjs/formatters':
-        specifier: workspace:^
-        version: link:../formatters
-      '@discordjs/rest':
-        specifier: workspace:^
-        version: link:../rest
-      '@discordjs/util':
-        specifier: workspace:^
-        version: link:../util
-      '@discordjs/ws':
-        specifier: workspace:^
-        version: link:../ws
       '@sapphire/snowflake':
         specifier: 3.5.3
         version: 3.5.3
@@ -968,13 +968,13 @@ importers:
         specifier: 6.18.2
         version: 6.18.2
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/docgen':
+      '@ckohen/docgen':
         specifier: workspace:^
         version: link:../docgen
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1075,10 +1075,10 @@ importers:
         specifier: 0.37.90
         version: 0.37.90
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1123,35 +1123,35 @@ importers:
 
   packages/next:
     dependencies:
-      '@discordjs/builders':
+      '@ckohen/builders':
         specifier: workspace:^
         version: link:../builders
-      '@discordjs/collection':
+      '@ckohen/collection':
         specifier: workspace:^
         version: link:../collection
-      '@discordjs/core':
+      '@ckohen/core':
         specifier: workspace:^
         version: link:../core
-      '@discordjs/formatters':
+      '@ckohen/formatters':
         specifier: workspace:^
         version: link:../formatters
-      '@discordjs/rest':
+      '@ckohen/rest':
         specifier: workspace:^
         version: link:../rest
-      '@discordjs/util':
+      '@ckohen/util':
         specifier: workspace:^
         version: link:../util
-      '@discordjs/ws':
+      '@ckohen/ws':
         specifier: workspace:^
         version: link:../ws
       discord-api-types:
         specifier: 0.37.90
         version: 0.37.90
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1196,10 +1196,10 @@ importers:
 
   packages/proxy:
     dependencies:
-      '@discordjs/rest':
+      '@ckohen/rest':
         specifier: workspace:^
         version: link:../rest
-      '@discordjs/util':
+      '@ckohen/util':
         specifier: workspace:^
         version: link:../util
       tslib:
@@ -1209,10 +1209,10 @@ importers:
         specifier: 6.18.2
         version: 6.18.2
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1263,10 +1263,10 @@ importers:
 
   packages/proxy-container:
     dependencies:
-      '@discordjs/proxy':
+      '@ckohen/proxy':
         specifier: workspace:^
         version: link:../proxy
-      '@discordjs/rest':
+      '@ckohen/rest':
         specifier: workspace:^
         version: link:../rest
       tslib:
@@ -1303,10 +1303,10 @@ importers:
 
   packages/rest:
     dependencies:
-      '@discordjs/collection':
+      '@ckohen/collection':
         specifier: workspace:^
         version: link:../collection
-      '@discordjs/util':
+      '@ckohen/util':
         specifier: workspace:^
         version: link:../util
       '@sapphire/async-queue':
@@ -1331,10 +1331,10 @@ importers:
         specifier: 6.18.2
         version: 6.18.2
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1382,10 +1382,10 @@ importers:
       '@actions/glob':
         specifier: ^0.4.0
         version: 0.4.0
-      '@discordjs/api-extractor-model':
+      '@ckohen/api-extractor-model':
         specifier: workspace:^
         version: link:../api-extractor-model
-      '@discordjs/api-extractor-utils':
+      '@ckohen/api-extractor-utils':
         specifier: workspace:^
         version: link:../api-extractor-utils
       '@microsoft/tsdoc':
@@ -1561,10 +1561,10 @@ importers:
 
   packages/util:
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1637,10 +1637,10 @@ importers:
       '@babel/preset-typescript':
         specifier: ^7.24.6
         version: 7.24.6(@babel/core@7.24.6)
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':
@@ -1694,13 +1694,13 @@ importers:
 
   packages/ws:
     dependencies:
-      '@discordjs/collection':
+      '@ckohen/collection':
         specifier: workspace:^
         version: link:../collection
-      '@discordjs/rest':
+      '@ckohen/rest':
         specifier: workspace:^
         version: link:../rest
-      '@discordjs/util':
+      '@ckohen/util':
         specifier: workspace:^
         version: link:../util
       '@sapphire/async-queue':
@@ -1722,10 +1722,10 @@ importers:
         specifier: ^8.17.0
         version: 8.17.0(bufferutil@4.0.8)(utf-8-validate@6.0.3)
     devDependencies:
-      '@discordjs/api-extractor':
+      '@ckohen/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
-      '@discordjs/scripts':
+      '@ckohen/scripts':
         specifier: workspace:^
         version: link:../scripts
       '@favware/cliff-jumper':

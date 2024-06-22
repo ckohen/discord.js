@@ -1,4 +1,4 @@
-# @discordjs/api-extractor
+# @ckohen/api-extractor
 
 ![API Extractor](https://github.com/microsoft/rushstack/raw/main/common/wiki-images/api-extractor-title.png?raw=true)
 <br />

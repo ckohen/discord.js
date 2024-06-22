@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/next",
+	"name": "@ckohen/next",
 	"version": "0.1.0",
 	"description": "A powerful TypeScript library for interacting with the Discord API",
 	"scripts": {
@@ -65,18 +65,18 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/builders": "workspace:^",
-		"@discordjs/collection": "workspace:^",
-		"@discordjs/core": "workspace:^",
-		"@discordjs/formatters": "workspace:^",
-		"@discordjs/rest": "workspace:^",
-		"@discordjs/util": "workspace:^",
-		"@discordjs/ws": "workspace:^",
+		"@ckohen/builders": "workspace:^",
+		"@ckohen/collection": "workspace:^",
+		"@ckohen/core": "workspace:^",
+		"@ckohen/formatters": "workspace:^",
+		"@ckohen/rest": "workspace:^",
+		"@ckohen/util": "workspace:^",
+		"@ckohen/ws": "workspace:^",
 		"discord-api-types": "0.37.90"
 	},
 	"devDependencies": {
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/node": "18.18.8",
 		"@vitest/coverage-v8": "^1.6.0",

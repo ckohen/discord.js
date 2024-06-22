@@ -19,7 +19,7 @@ const {
   TimestampStyles,
   underscore,
   userMention,
-} = require('@discordjs/formatters');
+} = require('@ckohen/formatters');
 
 /**
  * Formats an application command name and id into an application command mention.

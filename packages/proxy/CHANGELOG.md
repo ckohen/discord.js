@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-# [@discordjs/proxy@2.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@2.0.2...@discordjs/proxy@2.1.0) - (2024-05-04)
+# [@ckohen/proxy@2.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@2.0.2...@ckohen/proxy@2.1.0) - (2024-05-04)
 
 ## Bug Fixes
 
@@ -22,7 +22,7 @@ All notable changes to this project will be documented in this file.
 
 - Docs (#10126) ([18cce83](https://github.com/discordjs/discord.js/commit/18cce83d80598c430218775c53441b6b2ecdc776))
 
-# [@discordjs/proxy@2.0.2](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@2.0.1...@discordjs/proxy@2.0.2) - (2023-11-12)
+# [@ckohen/proxy@2.0.2](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@2.0.1...@ckohen/proxy@2.0.2) - (2023-11-12)
 
 ## Bug Fixes
 
@@ -32,13 +32,13 @@ All notable changes to this project will be documented in this file.
 
 - **create-discord-bot:** Support bun in create-discord-bot (#9798) ([7157748](https://github.com/discordjs/discord.js/commit/7157748fe3a69265896adf0450cd3f37acbcf97b))
 
-# [@discordjs/proxy@2.0.1](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@2.0.0...@discordjs/proxy@2.0.1) - (2023-08-17)
+# [@ckohen/proxy@2.0.1](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@2.0.0...@ckohen/proxy@2.0.1) - (2023-08-17)
 
 ## Documentation
 
 - Update Node.js requirement to 16.11.0 (#9764) ([188877c](https://github.com/discordjs/discord.js/commit/188877c50af70f0d5cffb246620fa277435c6ce6))
 
-# [@discordjs/proxy@2.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.4.1...@discordjs/proxy@2.0.0) - (2023-07-31)
+# [@ckohen/proxy@2.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.4.1...@ckohen/proxy@2.0.0) - (2023-07-31)
 
 ## Refactor
 
@@ -55,7 +55,7 @@ All notable changes to this project will be documented in this file.
   - **BREAKING CHANGE:** Many underlying internals have changed, some of which were exported.
   - **BREAKING CHANGE:** `DefaultRestOptions` used to contain a default `agent`, which is now set to `null` instead.
 
-# [@discordjs/proxy@1.4.1](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.4.0...@discordjs/proxy@1.4.1) - (2023-05-01)
+# [@ckohen/proxy@1.4.1](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.4.0...@ckohen/proxy@1.4.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -69,7 +69,7 @@ All notable changes to this project will be documented in this file.
 
 - **proxy:** Rely on auth header instead (#9422) ([a49ed0a](https://github.com/discordjs/discord.js/commit/a49ed0a2d5934ad7af2e9cfbf7c5ccf171599591))
 
-# [@discordjs/proxy@2.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.4.1...@discordjs/proxy@2.0.0) - (2023-07-31)
+# [@ckohen/proxy@2.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.4.1...@ckohen/proxy@2.0.0) - (2023-07-31)
 
 ## Refactor
 
@@ -86,7 +86,7 @@ All notable changes to this project will be documented in this file.
   - **BREAKING CHANGE:** Many underlying internals have changed, some of which were exported.
   - **BREAKING CHANGE:** `DefaultRestOptions` used to contain a default `agent`, which is now set to `null` instead.
 
-# [@discordjs/proxy@1.4.1](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.4.0...@discordjs/proxy@1.4.1) - (2023-05-01)
+# [@ckohen/proxy@1.4.1](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.4.0...@ckohen/proxy@1.4.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -100,7 +100,7 @@ All notable changes to this project will be documented in this file.
 
 - **proxy:** Rely on auth header instead (#9422) ([a49ed0a](https://github.com/discordjs/discord.js/commit/a49ed0a2d5934ad7af2e9cfbf7c5ccf171599591))
 
-# [@discordjs/proxy@1.4.1](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.4.0...@discordjs/proxy@1.4.1) - (2023-05-01)
+# [@ckohen/proxy@1.4.1](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.4.0...@ckohen/proxy@1.4.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -114,7 +114,7 @@ All notable changes to this project will be documented in this file.
 
 - **proxy:** Rely on auth header instead (#9422) ([a49ed0a](https://github.com/discordjs/discord.js/commit/a49ed0a2d5934ad7af2e9cfbf7c5ccf171599591))
 
-# [@discordjs/proxy@1.4.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.3.0...@discordjs/proxy@1.4.0) - (2023-04-01)
+# [@ckohen/proxy@1.4.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.3.0...@ckohen/proxy@1.4.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -124,7 +124,7 @@ All notable changes to this project will be documented in this file.
 
 - **website:** Render syntax and mdx on the server (#9086) ([ee5169e](https://github.com/discordjs/discord.js/commit/ee5169e0aadd7bbfcd752aae614ec0f69602b68b))
 
-# [@discordjs/proxy@1.3.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.2.1...@discordjs/proxy@1.3.0) - (2023-03-12)
+# [@ckohen/proxy@1.3.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.2.1...@ckohen/proxy@1.3.0) - (2023-03-12)
 
 ## Documentation
 
@@ -134,13 +134,13 @@ All notable changes to this project will be documented in this file.
 
 - **website:** Add support for source file links (#9048) ([f6506e9](https://github.com/discordjs/discord.js/commit/f6506e99c496683ee0ab67db0726b105b929af38))
 
-# [@discordjs/proxy@1.2.1](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.2.0...@discordjs/proxy@1.2.1) - (2022-11-25)
+# [@ckohen/proxy@1.2.1](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.2.0...@ckohen/proxy@1.2.1) - (2022-11-25)
 
 ## Bug Fixes
 
 - Pin @types/node version ([9d8179c](https://github.com/discordjs/discord.js/commit/9d8179c6a78e1c7f9976f852804055964d5385d4))
 
-# [@discordjs/proxy@1.2.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.1.0...@discordjs/proxy@1.2.0) - (2022-10-07)
+# [@ckohen/proxy@1.2.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.1.0...@ckohen/proxy@1.2.0) - (2022-10-07)
 
 ## Bug Fixes
 
@@ -154,14 +154,14 @@ All notable changes to this project will be documented in this file.
 ## Features
 
 - Web-components (#8715) ([0ac3e76](https://github.com/discordjs/discord.js/commit/0ac3e766bd9dbdeb106483fa4bb085d74de346a2))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 
 ## Refactor
 
 - Website components (#8600) ([c334157](https://github.com/discordjs/discord.js/commit/c3341570d983aea9ecc419979d5a01de658c9d67))
 - Use `eslint-config-neon` for packages. (#8579) ([edadb9f](https://github.com/discordjs/discord.js/commit/edadb9fe5dfd9ff51a3cfc9b25cb242d3f9f5241))
 
-# [@discordjs/proxy@1.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/proxy@1.0.1...@discordjs/proxy@1.1.0) - (2022-08-22)
+# [@ckohen/proxy@1.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/proxy@1.0.1...@ckohen/proxy@1.1.0) - (2022-08-22)
 
 ## Bug Fixes
 
@@ -175,7 +175,7 @@ All notable changes to this project will be documented in this file.
 
 - Docs design (#8487) ([4ab1d09](https://github.com/discordjs/discord.js/commit/4ab1d09997a18879a9eb9bda39df6f15aa22557e))
 
-# [@discordjs/proxy@1.0.1](https://github.com/discordjs/discord.js/tree/@discordjs/proxy@1.0.1) - (2022-07-27)
+# [@ckohen/proxy@1.0.1](https://github.com/discordjs/discord.js/tree/@ckohen/proxy@1.0.1) - (2022-07-27)
 
 ## Bug Fixes
 
@@ -196,7 +196,7 @@ All notable changes to this project will be documented in this file.
 - Docgen package (#8029) ([8b979c0](https://github.com/discordjs/discord.js/commit/8b979c0245c42fd824d8e98745ee869f5360fc86))
 - Use vitest instead of jest for more speed ([8d8e6c0](https://github.com/discordjs/discord.js/commit/8d8e6c03decd7352a2aa180f6e5bc1a13602539b))
 - Add scripts package for locally used scripts ([f2ae1f9](https://github.com/discordjs/discord.js/commit/f2ae1f9348bfd893332a9060f71a8a5f272a1b8b))
-- @discordjs/proxy (#7925) ([1ba2d2a](https://github.com/discordjs/discord.js/commit/1ba2d2a898613e5fcc119a97dce935f4db91162c))
+- @ckohen/proxy (#7925) ([1ba2d2a](https://github.com/discordjs/discord.js/commit/1ba2d2a898613e5fcc119a97dce935f4db91162c))
 
 ## Refactor
 

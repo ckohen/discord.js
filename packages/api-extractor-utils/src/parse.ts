@@ -13,16 +13,14 @@ import {
 	ApiDeclaredItem,
 	type ApiMethod,
 	type ApiMethodSignature,
-} from '@discordjs/api-extractor-model';
+} from '@ckohen/api-extractor-model';
 import type { DocNode, DocParagraph, DocPlainText } from '@microsoft/tsdoc';
 import { type Meaning, ModuleSource } from '@microsoft/tsdoc/lib-commonjs/beta/DeclarationReference.js';
 import type { DocBlockJSON } from './tsdoc/CommentBlock.js';
 import { createCommentNode } from './tsdoc/index.js';
 
 export function findPackage(model: ApiModel, name: string): ApiPackage | undefined {
-	return (model.findMembersByName(name)[0] ?? model.findMembersByName(`@discordjs/${name}`)[0]) as
-		| ApiPackage
-		| undefined;
+	return (model.findMembersByName(name)[0] ?? model.findMembersByName(`@ckohen/${name}`)[0]) as ApiPackage | undefined;
 }
 
 function hasOverloadIndex(item: ApiItem): item is ApiFunction | ApiMethod | ApiMethodSignature {
@@ -62,8 +60,8 @@ export function generatePath(items: readonly ApiItem[], version: string) {
 		}
 	}
 
-	return path.includes('@discordjs/')
-		? path.replace(/@discordjs\/(?<package>.*)\/(?<member>.*)?/, `$<package>/${version}/$<member>`)
+	return path.includes('@ckohen/')
+		? path.replace(/@ckohen\/(?<package>.*)\/(?<member>.*)?/, `$<package>/${version}/$<member>`)
 		: path.replace(/(?<package>.*)\/(?<member>.*)?/, `$<package>/${version}/$<member>`);
 }
 

@@ -6,8 +6,8 @@
 	<br />
 	<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/core"><img src="https://img.shields.io/npm/v/@discordjs/core.svg?maxAge=3600" alt="npm version" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/core"><img src="https://img.shields.io/npm/dt/@discordjs/core.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/core"><img src="https://img.shields.io/npm/v/@ckohen/core.svg?maxAge=3600" alt="npm version" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/core"><img src="https://img.shields.io/npm/dt/@ckohen/core.svg?maxAge=3600" alt="npm downloads" /></a>
 		<a href="https://github.com/discordjs/discord.js/actions"><img src="https://github.com/discordjs/discord.js/actions/workflows/test.yml/badge.svg" alt="Build status" /></a>
 		<a href="https://codecov.io/gh/discordjs/discord.js" ><img src="https://codecov.io/gh/discordjs/discord.js/branch/main/graph/badge.svg?precision=2&flag=core" alt="Code coverage" /></a>
 	</p>
@@ -19,24 +19,24 @@
 
 ## About
 
-`@discordjs/core` is a thinly abstracted wrapper around the "core" components of the Discord API: REST, and gateway.
+`@ckohen/core` is a thinly abstracted wrapper around the "core" components of the Discord API: REST, and gateway.
 
 ## Installation
 
 **Node.js 18 or newer is required.**
 
 ```sh
-npm install @discordjs/core
-yarn add @discordjs/core
-pnpm add @discordjs/core
+npm install @ckohen/core
+yarn add @ckohen/core
+pnpm add @ckohen/core
 ```
 
 ## Example usage
 
 ```ts
-import { REST } from '@discordjs/rest';
-import { WebSocketManager } from '@discordjs/ws';
-import { GatewayDispatchEvents, GatewayIntentBits, InteractionType, MessageFlags, Client } from '@discordjs/core';
+import { REST } from '@ckohen/rest';
+import { WebSocketManager } from '@ckohen/ws';
+import { GatewayDispatchEvents, GatewayIntentBits, InteractionType, MessageFlags, Client } from '@ckohen/core';
 
 // Create REST and WebSocket managers directly
 const rest = new REST({ version: '10' }).setToken(process.env.DISCORD_TOKEN);
@@ -111,6 +111,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/core
-[npm]: https://www.npmjs.com/package/@discordjs/core
+[npm]: https://www.npmjs.com/package/@ckohen/core
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

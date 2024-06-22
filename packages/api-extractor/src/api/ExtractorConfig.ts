@@ -2,7 +2,7 @@
 // See LICENSE in the project root for license information.
 
 import * as path from 'node:path';
-import { EnumMemberOrder } from '@discordjs/api-extractor-model';
+import { EnumMemberOrder } from '@ckohen/api-extractor-model';
 import { TSDocConfiguration } from '@microsoft/tsdoc';
 import { TSDocConfigFile } from '@microsoft/tsdoc-config';
 import {
@@ -142,7 +142,7 @@ export interface IExtractorConfigPrepareOptions {
 	/**
 	 * Allow customization of the tsdoc.json config file.  If omitted, this file will be loaded from its default
 	 * location.  If the file does not exist, then the standard definitions will be used from
-	 * `@discordjs/api-extractor/extends/tsdoc-base.json`.
+	 * `@ckohen/api-extractor/extends/tsdoc-base.json`.
 	 */
 	tsdocConfigFile?: TSDocConfigFile;
 }

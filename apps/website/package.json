@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/website",
+	"name": "@ckohen/website",
 	"version": "0.1.0",
 	"description": "Imagine a bot... the most popular way to build discord bots",
 	"private": true,
@@ -12,7 +12,7 @@
 		"build:prod": "pnpm run build:copy_readme && pnpm run build:next",
 		"build:next": "next build",
 		"build:search_indices": "pnpm node scripts/generateAllIndices.js",
-		"build:analyze": "turbo run docs --filter='@discordjs/*' --concurrency=4 && cross-env ANALYZE=true NEXT_PUBLIC_LOCAL_DEV=true pnpm run build:prod",
+		"build:analyze": "turbo run docs --filter='@ckohen/*' --concurrency=4 && cross-env ANALYZE=true NEXT_PUBLIC_LOCAL_DEV=true pnpm run build:prod",
 		"preview": "next start",
 		"dev": "next dev",
 		"lint": "pnpm run build:check && prettier --check . && cross-env TIMING=1 eslint --format=pretty src",

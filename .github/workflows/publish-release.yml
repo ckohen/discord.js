@@ -11,7 +11,7 @@ jobs:
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-    if: github.repository_owner == 'discordjs'
+    if: github.repository_owner == 'ckohen'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -36,6 +36,6 @@ jobs:
 
       - name: Publish package
         run: |
-          pnpm --filter=${{ steps.extract-tag.outputs.subpackage == 'true' && '@discordjs/' || '' }}${{ steps.extract-tag.outputs.package }} publish --provenance --no-git-checks
+          pnpm --filter=${{ steps.extract-tag.outputs.subpackage == 'true' && '@ckohen/' || '' }}${{ steps.extract-tag.outputs.package }} publish --provenance --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}

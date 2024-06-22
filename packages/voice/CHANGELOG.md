@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-# [@discordjs/voice@0.17.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.16.0...@discordjs/voice@0.17.0) - (2024-05-04)
+# [@ckohen/voice@0.17.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.16.0...@ckohen/voice@0.17.0) - (2024-05-04)
 
 ## Bug Fixes
 
@@ -27,7 +27,7 @@ All notable changes to this project will be documented in this file.
 - Docs (#10126) ([18cce83](https://github.com/discordjs/discord.js/commit/18cce83d80598c430218775c53441b6b2ecdc776))
 - Move `getNode`/`canEnableFFmpegOptimizations` into a lazy loaded call (#9918) ([637e1a4](https://github.com/discordjs/discord.js/commit/637e1a4ddb6d5810deb31c5b90400ca277218270))
 
-# [@discordjs/voice@0.16.1](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.16.0...@discordjs/voice@0.16.1) - (2023-11-12)
+# [@ckohen/voice@0.16.1](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.16.0...@ckohen/voice@0.16.1) - (2023-11-12)
 
 ## Bug Fixes
 
@@ -45,7 +45,7 @@ All notable changes to this project will be documented in this file.
 
 - Move `getNode`/`canEnableFFmpegOptimizations` into a lazy loaded call (#9918) ([637e1a4](https://github.com/discordjs/discord.js/commit/637e1a4ddb6d5810deb31c5b90400ca277218270))
 
-# [@discordjs/voice@0.16.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.15.0...@discordjs/voice@0.16.0) - (2023-04-01)
+# [@ckohen/voice@0.16.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.15.0...@ckohen/voice@0.16.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -59,7 +59,7 @@ All notable changes to this project will be documented in this file.
 
 - Compare with `undefined` directly (#9191) ([869153c](https://github.com/discordjs/discord.js/commit/869153c3fdf155783e7c0ecebd3627b087c3a026))
 
-# [@discordjs/voice@0.15.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.14.0...@discordjs/voice@0.15.0) - (2023-03-12)
+# [@ckohen/voice@0.15.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.14.0...@ckohen/voice@0.15.0) - (2023-03-12)
 
 ## Bug Fixes
 
@@ -73,7 +73,7 @@ All notable changes to this project will be documented in this file.
 
 - **website:** Add support for source file links (#9048) ([f6506e9](https://github.com/discordjs/discord.js/commit/f6506e99c496683ee0ab67db0726b105b929af38))
 
-# [@discordjs/voice@0.14.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.13.0...@discordjs/voice@0.14.0) - (2022-11-28)
+# [@ckohen/voice@0.14.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.13.0...@ckohen/voice@0.14.0) - (2022-11-28)
 
 ## Bug Fixes
 
@@ -84,7 +84,7 @@ All notable changes to this project will be documented in this file.
 
 - New select menus (#8793) ([5152abf](https://github.com/discordjs/discord.js/commit/5152abf7285581abf7689e9050fdc56c4abb1e2b))
 
-# [@discordjs/voice@0.13.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.11.0...@discordjs/voice@0.13.0) - (2022-10-08)
+# [@ckohen/voice@0.13.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.11.0...@ckohen/voice@0.13.0) - (2022-10-08)
 
 ## Bug Fixes
 
@@ -106,7 +106,7 @@ All notable changes to this project will be documented in this file.
 - Use `eslint-config-neon` for packages. (#8579) ([edadb9f](https://github.com/discordjs/discord.js/commit/edadb9fe5dfd9ff51a3cfc9b25cb242d3f9f5241))
 - Docs design (#8487) ([4ab1d09](https://github.com/discordjs/discord.js/commit/4ab1d09997a18879a9eb9bda39df6f15aa22557e))
 
-# [@discordjs/voice@0.11.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.10.0...@discordjs/voice@0.11.0) - (2022-07-17)
+# [@ckohen/voice@0.11.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.10.0...@ckohen/voice@0.11.0) - (2022-07-17)
 
 ## Bug Fixes
 
@@ -140,13 +140,13 @@ All notable changes to this project will be documented in this file.
 
 - **voice:** Bring back typed events (#8109) ([70b42bb](https://github.com/discordjs/discord.js/commit/70b42bb64a4f83da0da242569b9c7921c8d1e26f))
 
-# [@discordjs/voice@0.10.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.16.1...@discordjs/voice@0.10.0) - (2022-06-04)
+# [@ckohen/voice@0.10.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.16.1...@ckohen/voice@0.10.0) - (2022-06-04)
 
 ## Styling
 
 - Cleanup tests and tsup configs ([6b8ef20](https://github.com/discordjs/discord.js/commit/6b8ef20cb3af5b5cfd176dd0aa0a1a1e98551629))
 
-# [@discordjs/voice@0.16.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.15.0...@discordjs/voice@0.16.0) - (2023-04-01)
+# [@ckohen/voice@0.16.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.15.0...@ckohen/voice@0.16.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -160,7 +160,7 @@ All notable changes to this project will be documented in this file.
 
 - Compare with `undefined` directly (#9191) ([869153c](https://github.com/discordjs/discord.js/commit/869153c3fdf155783e7c0ecebd3627b087c3a026))
 
-# [@discordjs/voice@0.15.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.14.0...@discordjs/voice@0.15.0) - (2023-03-12)
+# [@ckohen/voice@0.15.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.14.0...@ckohen/voice@0.15.0) - (2023-03-12)
 
 ## Bug Fixes
 
@@ -174,7 +174,7 @@ All notable changes to this project will be documented in this file.
 
 - **website:** Add support for source file links (#9048) ([f6506e9](https://github.com/discordjs/discord.js/commit/f6506e99c496683ee0ab67db0726b105b929af38))
 
-# [@discordjs/voice@0.14.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.13.0...@discordjs/voice@0.14.0) - (2022-11-28)
+# [@ckohen/voice@0.14.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.13.0...@ckohen/voice@0.14.0) - (2022-11-28)
 
 ## Bug Fixes
 
@@ -185,7 +185,7 @@ All notable changes to this project will be documented in this file.
 
 - New select menus (#8793) ([5152abf](https://github.com/discordjs/discord.js/commit/5152abf7285581abf7689e9050fdc56c4abb1e2b))
 
-# [@discordjs/voice@0.13.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.11.0...@discordjs/voice@0.13.0) - (2022-10-08)
+# [@ckohen/voice@0.13.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.11.0...@ckohen/voice@0.13.0) - (2022-10-08)
 
 ## Bug Fixes
 
@@ -207,7 +207,7 @@ All notable changes to this project will be documented in this file.
 - Use `eslint-config-neon` for packages. (#8579) ([edadb9f](https://github.com/discordjs/discord.js/commit/edadb9fe5dfd9ff51a3cfc9b25cb242d3f9f5241))
 - Docs design (#8487) ([4ab1d09](https://github.com/discordjs/discord.js/commit/4ab1d09997a18879a9eb9bda39df6f15aa22557e))
 
-# [@discordjs/voice@0.11.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.10.0...@discordjs/voice@0.11.0) - (2022-07-17)
+# [@ckohen/voice@0.11.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.10.0...@ckohen/voice@0.11.0) - (2022-07-17)
 
 ## Bug Fixes
 
@@ -241,7 +241,7 @@ All notable changes to this project will be documented in this file.
 
 - **voice:** Bring back typed events (#8109) ([70b42bb](https://github.com/discordjs/discord.js/commit/70b42bb64a4f83da0da242569b9c7921c8d1e26f))
 
-# [@discordjs/voice@0.10.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.8.0...@discordjs/voice@0.10.0) - (2022-06-04)
+# [@ckohen/voice@0.10.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.8.0...@ckohen/voice@0.10.0) - (2022-06-04)
 
 ## Bug Fixes
 
@@ -258,7 +258,7 @@ All notable changes to this project will be documented in this file.
 
 - Cleanup tests and tsup configs ([6b8ef20](https://github.com/discordjs/discord.js/commit/6b8ef20cb3af5b5cfd176dd0aa0a1a1e98551629))
 
-# [@discordjs/voice@0.8.0](https://github.com/discordjs/discord.js/compare/@discordjs/voice@0.7.5...@discordjs/voice@0.8.0) - (2022-01-24)
+# [@ckohen/voice@0.8.0](https://github.com/discordjs/discord.js/compare/@ckohen/voice@0.7.5...@ckohen/voice@0.8.0) - (2022-01-24)
 
 ## Refactor
 

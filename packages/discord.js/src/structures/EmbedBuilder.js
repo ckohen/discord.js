@@ -1,7 +1,7 @@
 'use strict';
 
-const { EmbedBuilder: BuildersEmbed, embedLength } = require('@discordjs/builders');
-const { isJSONEncodable } = require('@discordjs/util');
+const { EmbedBuilder: BuildersEmbed, embedLength } = require('@ckohen/builders');
+const { isJSONEncodable } = require('@ckohen/util');
 const { toSnakeCase } = require('../util/Transformers');
 const { resolveColor } = require('../util/Util');
 

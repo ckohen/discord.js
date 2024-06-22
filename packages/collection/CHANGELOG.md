@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-# [@discordjs/collection@2.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@2.0.0...@discordjs/collection@2.1.0) - (2024-05-04)
+# [@ckohen/collection@2.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@2.0.0...@ckohen/collection@2.1.0) - (2024-05-04)
 
 ## Bug Fixes
 
@@ -21,7 +21,7 @@ All notable changes to this project will be documented in this file.
 
 - Docs (#10126) ([18cce83](https://github.com/discordjs/discord.js/commit/18cce83d80598c430218775c53441b6b2ecdc776))
 
-# [@discordjs/collection@2.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.3...@discordjs/collection@2.0.0) - (2023-11-12)
+# [@ckohen/collection@2.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.3...@ckohen/collection@2.0.0) - (2023-11-12)
 
 ## Documentation
 
@@ -38,19 +38,19 @@ All notable changes to this project will be documented in this file.
   - **BREAKING CHANGE:** The `subtract` method has been renamed to `difference`
 - Support `findLast` and `reduceRight` methods (#9573) ([ac64508](https://github.com/discordjs/discord.js/commit/ac645084f03433372c297e02383a88532f9d385c))
 
-# [@discordjs/collection@1.5.3](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.2...@discordjs/collection@1.5.3) - (2023-08-17)
+# [@ckohen/collection@1.5.3](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.2...@ckohen/collection@1.5.3) - (2023-08-17)
 
 ## Documentation
 
 - Update Node.js requirement to 16.11.0 (#9764) ([188877c](https://github.com/discordjs/discord.js/commit/188877c50af70f0d5cffb246620fa277435c6ce6))
 
-# [@discordjs/collection@1.5.2](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.1...@discordjs/collection@1.5.2) - (2023-07-31)
+# [@ckohen/collection@1.5.2](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.1...@ckohen/collection@1.5.2) - (2023-07-31)
 
 ## Refactor
 
 - **collection:** Reduce `reduce`'s code (#9581) ([b85a3f2](https://github.com/discordjs/discord.js/commit/b85a3f2ddee8fc5974749b95fc07389a03093df2))
 
-# [@discordjs/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.0...@discordjs/collection@1.5.1) - (2023-05-01)
+# [@ckohen/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.0...@ckohen/collection@1.5.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -60,7 +60,7 @@ All notable changes to this project will be documented in this file.
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/collection@1.5.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.4.0...@discordjs/collection@1.5.0) - (2023-04-01)
+# [@ckohen/collection@1.5.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.4.0...@ckohen/collection@1.5.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -74,7 +74,7 @@ All notable changes to this project will be documented in this file.
 
 - **collection:** Fix/silence linter warnings (#9266) ([d6f4e60](https://github.com/discordjs/discord.js/commit/d6f4e60efd1a1796fc84dbbfbac4f9790e480a1c))
 
-# [@discordjs/collection@1.4.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.3.0...@discordjs/collection@1.4.0) - (2023-03-12)
+# [@ckohen/collection@1.4.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.3.0...@ckohen/collection@1.4.0) - (2023-03-12)
 
 ## Documentation
 
@@ -88,7 +88,7 @@ All notable changes to this project will be documented in this file.
 
 - Compare with `undefined` directly (#9191) ([869153c](https://github.com/discordjs/discord.js/commit/869153c3fdf155783e7c0ecebd3627b087c3a026))
 
-# [@discordjs/collection@1.3.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.2.0...@discordjs/collection@1.3.0) - (2022-11-28)
+# [@ckohen/collection@1.3.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.2.0...@ckohen/collection@1.3.0) - (2022-11-28)
 
 ## Bug Fixes
 
@@ -98,7 +98,7 @@ All notable changes to this project will be documented in this file.
 
 - Add `Collection#subtract()` (#8393) ([291f36c](https://github.com/discordjs/discord.js/commit/291f36cd736b5dea058145a1335bf7c78ec1d81d))
 
-# [@discordjs/collection@1.2.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.1.0...@discordjs/collection@1.2.0) - (2022-10-08)
+# [@ckohen/collection@1.2.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.1.0...@ckohen/collection@1.2.0) - (2022-10-08)
 
 ## Bug Fixes
 
@@ -122,7 +122,7 @@ All notable changes to this project will be documented in this file.
 
 - **Collection:** Make fn return type unknown (#8676) ([822b7f2](https://github.com/discordjs/discord.js/commit/822b7f234af053c8f917b0a998b82abfccd33801))
 
-# [@discordjs/collection@1.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.0.1...@discordjs/collection@1.1.0) - (2022-08-22)
+# [@ckohen/collection@1.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.0.1...@ckohen/collection@1.1.0) - (2022-08-22)
 
 ## Bug Fixes
 
@@ -143,7 +143,7 @@ All notable changes to this project will be documented in this file.
 - **website:** Adjust typography (#8503) ([0f83402](https://github.com/discordjs/discord.js/commit/0f834029850d2448981596cf082ff59917018d66))
 - Docs design (#8487) ([4ab1d09](https://github.com/discordjs/discord.js/commit/4ab1d09997a18879a9eb9bda39df6f15aa22557e))
 
-# [@discordjs/collection@0.8.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@0.7.0...@discordjs/collection@0.8.0) - (2022-07-17)
+# [@ckohen/collection@0.8.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@0.7.0...@ckohen/collection@0.8.0) - (2022-07-17)
 
 ## Bug Fixes
 
@@ -174,25 +174,25 @@ All notable changes to this project will be documented in this file.
 
 - **collection:** Improve coverage (#8222) ([a51f721](https://github.com/discordjs/discord.js/commit/a51f7215eca67a0f46fba8b2d706f7ec6f6dc228))
 
-# [@discordjs/collection@0.7.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@2.0.0...@discordjs/collection@0.7.0) - (2022-06-04)
+# [@ckohen/collection@0.7.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@2.0.0...@ckohen/collection@0.7.0) - (2022-06-04)
 
 ## Styling
 
 - Cleanup tests and tsup configs ([6b8ef20](https://github.com/discordjs/discord.js/commit/6b8ef20cb3af5b5cfd176dd0aa0a1a1e98551629))
 
-# [@discordjs/collection@1.5.3](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.2...@discordjs/collection@1.5.3) - (2023-08-17)
+# [@ckohen/collection@1.5.3](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.2...@ckohen/collection@1.5.3) - (2023-08-17)
 
 ## Documentation
 
 - Update Node.js requirement to 16.11.0 (#9764) ([188877c](https://github.com/discordjs/discord.js/commit/188877c50af70f0d5cffb246620fa277435c6ce6))
 
-# [@discordjs/collection@1.5.2](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.1...@discordjs/collection@1.5.2) - (2023-07-31)
+# [@ckohen/collection@1.5.2](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.1...@ckohen/collection@1.5.2) - (2023-07-31)
 
 ## Refactor
 
 - **collection:** Reduce `reduce`'s code (#9581) ([b85a3f2](https://github.com/discordjs/discord.js/commit/b85a3f2ddee8fc5974749b95fc07389a03093df2))
 
-# [@discordjs/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.0...@discordjs/collection@1.5.1) - (2023-05-01)
+# [@ckohen/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.0...@ckohen/collection@1.5.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -202,13 +202,13 @@ All notable changes to this project will be documented in this file.
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/collection@1.5.2](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.1...@discordjs/collection@1.5.2) - (2023-07-31)
+# [@ckohen/collection@1.5.2](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.1...@ckohen/collection@1.5.2) - (2023-07-31)
 
 ## Refactor
 
 - **collection:** Reduce `reduce`'s code (#9581) ([b85a3f2](https://github.com/discordjs/discord.js/commit/b85a3f2ddee8fc5974749b95fc07389a03093df2))
 
-# [@discordjs/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.0...@discordjs/collection@1.5.1) - (2023-05-01)
+# [@ckohen/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.0...@ckohen/collection@1.5.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -218,7 +218,7 @@ All notable changes to this project will be documented in this file.
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.5.0...@discordjs/collection@1.5.1) - (2023-05-01)
+# [@ckohen/collection@1.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.5.0...@ckohen/collection@1.5.1) - (2023-05-01)
 
 ## Bug Fixes
 
@@ -228,7 +228,7 @@ All notable changes to this project will be documented in this file.
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/collection@1.5.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.4.0...@discordjs/collection@1.5.0) - (2023-04-01)
+# [@ckohen/collection@1.5.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.4.0...@ckohen/collection@1.5.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -242,7 +242,7 @@ All notable changes to this project will be documented in this file.
 
 - **collection:** Fix/silence linter warnings (#9266) ([d6f4e60](https://github.com/discordjs/discord.js/commit/d6f4e60efd1a1796fc84dbbfbac4f9790e480a1c))
 
-# [@discordjs/collection@1.4.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.3.0...@discordjs/collection@1.4.0) - (2023-03-12)
+# [@ckohen/collection@1.4.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.3.0...@ckohen/collection@1.4.0) - (2023-03-12)
 
 ## Documentation
 
@@ -256,7 +256,7 @@ All notable changes to this project will be documented in this file.
 
 - Compare with `undefined` directly (#9191) ([869153c](https://github.com/discordjs/discord.js/commit/869153c3fdf155783e7c0ecebd3627b087c3a026))
 
-# [@discordjs/collection@1.3.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.2.0...@discordjs/collection@1.3.0) - (2022-11-28)
+# [@ckohen/collection@1.3.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.2.0...@ckohen/collection@1.3.0) - (2022-11-28)
 
 ## Bug Fixes
 
@@ -266,7 +266,7 @@ All notable changes to this project will be documented in this file.
 
 - Add `Collection#subtract()` (#8393) ([291f36c](https://github.com/discordjs/discord.js/commit/291f36cd736b5dea058145a1335bf7c78ec1d81d))
 
-# [@discordjs/collection@1.2.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.1.0...@discordjs/collection@1.2.0) - (2022-10-08)
+# [@ckohen/collection@1.2.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.1.0...@ckohen/collection@1.2.0) - (2022-10-08)
 
 ## Bug Fixes
 
@@ -290,7 +290,7 @@ All notable changes to this project will be documented in this file.
 
 - **Collection:** Make fn return type unknown (#8676) ([822b7f2](https://github.com/discordjs/discord.js/commit/822b7f234af053c8f917b0a998b82abfccd33801))
 
-# [@discordjs/collection@1.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@1.0.1...@discordjs/collection@1.1.0) - (2022-08-22)
+# [@ckohen/collection@1.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@1.0.1...@ckohen/collection@1.1.0) - (2022-08-22)
 
 ## Bug Fixes
 
@@ -311,7 +311,7 @@ All notable changes to this project will be documented in this file.
 - **website:** Adjust typography (#8503) ([0f83402](https://github.com/discordjs/discord.js/commit/0f834029850d2448981596cf082ff59917018d66))
 - Docs design (#8487) ([4ab1d09](https://github.com/discordjs/discord.js/commit/4ab1d09997a18879a9eb9bda39df6f15aa22557e))
 
-# [@discordjs/collection@0.8.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@0.7.0...@discordjs/collection@0.8.0) - (2022-07-17)
+# [@ckohen/collection@0.8.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@0.7.0...@ckohen/collection@0.8.0) - (2022-07-17)
 
 ## Bug Fixes
 
@@ -342,13 +342,13 @@ All notable changes to this project will be documented in this file.
 
 - **collection:** Improve coverage (#8222) ([a51f721](https://github.com/discordjs/discord.js/commit/a51f7215eca67a0f46fba8b2d706f7ec6f6dc228))
 
-# [@discordjs/collection@0.7.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@0.6.0...@discordjs/collection@0.7.0) - (2022-06-04)
+# [@ckohen/collection@0.7.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@0.6.0...@ckohen/collection@0.7.0) - (2022-06-04)
 
 ## Styling
 
 - Cleanup tests and tsup configs ([6b8ef20](https://github.com/discordjs/discord.js/commit/6b8ef20cb3af5b5cfd176dd0aa0a1a1e98551629))
 
-# [@discordjs/collection@0.6.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@0.5.0...@discordjs/collection@0.6.0) - (2022-04-17)
+# [@ckohen/collection@0.6.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@0.5.0...@ckohen/collection@0.6.0) - (2022-04-17)
 
 ## Features
 
@@ -356,7 +356,7 @@ All notable changes to this project will be documented in this file.
 - **builders:** Add attachment command option type (#7203) ([ae0f35f](https://github.com/discordjs/discord.js/commit/ae0f35f51d68dfa5a7dc43d161ef9365171debdb))
 - **Collection:** Add merging functions (#7299) ([e4bd07b](https://github.com/discordjs/discord.js/commit/e4bd07b2394f227ea06b72eb6999de9ab3127b25))
 
-# [@discordjs/collection@0.5.0](https://github.com/discordjs/discord.js/compare/@discordjs/collection@0.4.0...@discordjs/collection@0.5.0) - (2022-01-24)
+# [@ckohen/collection@0.5.0](https://github.com/discordjs/discord.js/compare/@ckohen/collection@0.4.0...@ckohen/collection@0.5.0) - (2022-01-24)
 
 ## Refactor
 

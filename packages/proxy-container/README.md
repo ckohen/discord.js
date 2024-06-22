@@ -18,7 +18,7 @@
 
 ## About
 
-`@discordjs/proxy-container` - Lightweight HTTP proxy for Discord's API, brought to you as a container 📦
+`@ckohen/proxy-container` - Lightweight HTTP proxy for Discord's API, brought to you as a container 📦
 
 ## Usage
 
@@ -39,10 +39,10 @@ const client = new Client({
 });
 ```
 
-Or with just `@discordjs/rest`:
+Or with just `@ckohen/rest`:
 
 ```ts
-import { REST } from '@discordjs/rest';
+import { REST } from '@ckohen/rest';
 
 const rest = new REST({
 	api: 'http://localhost:8080/api',

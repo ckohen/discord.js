@@ -1,4 +1,4 @@
-import type { JSONEncodable } from '@discordjs/util';
+import type { JSONEncodable } from '@ckohen/util';
 import type {
 	APIActionRowComponent,
 	APIActionRowComponentTypes,

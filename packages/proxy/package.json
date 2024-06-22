@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/proxy",
+	"name": "@ckohen/proxy",
 	"version": "2.1.0",
 	"description": "Tools for running an HTTP proxy for Discord's API",
 	"scripts": {
@@ -65,14 +65,14 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/rest": "workspace:^",
-		"@discordjs/util": "workspace:^",
+		"@ckohen/rest": "workspace:^",
+		"@ckohen/util": "workspace:^",
 		"tslib": "^2.6.2",
 		"undici": "6.18.2"
 	},
 	"devDependencies": {
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/node": "18.18.8",
 		"@types/supertest": "^6.0.2",

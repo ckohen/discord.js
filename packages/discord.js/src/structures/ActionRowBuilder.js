@@ -1,7 +1,7 @@
 'use strict';
 
-const { ActionRowBuilder: BuildersActionRow } = require('@discordjs/builders');
-const { isJSONEncodable } = require('@discordjs/util');
+const { ActionRowBuilder: BuildersActionRow } = require('@ckohen/builders');
+const { isJSONEncodable } = require('@ckohen/util');
 const { createComponentBuilder } = require('../util/Components');
 const { toSnakeCase } = require('../util/Transformers');
 

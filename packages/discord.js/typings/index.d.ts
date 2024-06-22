@@ -16,7 +16,7 @@ import {
   ComponentBuilder,
   type RestOrArray,
   ApplicationCommandOptionAllowedChannelTypes,
-} from '@discordjs/builders';
+} from '@ckohen/builders';
 import {
   blockQuote,
   bold,
@@ -35,16 +35,11 @@ import {
   TimestampStyles,
   underscore,
   userMention,
-} from '@discordjs/formatters';
-import { Awaitable, JSONEncodable } from '@discordjs/util';
+} from '@ckohen/formatters';
+import { Awaitable, JSONEncodable } from '@ckohen/util';
 import { Collection, ReadonlyCollection } from '@discordjs/collection';
-import { BaseImageURLOptions, ImageURLOptions, RawFile, REST, RESTOptions } from '@discordjs/rest';
-import {
-  WebSocketManager as WSWebSocketManager,
-  IShardingStrategy,
-  IIdentifyThrottler,
-  SessionInfo,
-} from '@discordjs/ws';
+import { BaseImageURLOptions, ImageURLOptions, RawFile, REST, RESTOptions } from '@ckohen/rest';
+import { WebSocketManager as WSWebSocketManager, IShardingStrategy, IIdentifyThrottler, SessionInfo } from '@ckohen/ws';
 import {
   APIActionRowComponent,
   APIApplicationCommandInteractionData,
@@ -3823,24 +3818,24 @@ export enum DiscordjsErrorCodes {
   TokenMissing = 'TokenMissing',
   ApplicationCommandPermissionsTokenMissing = 'ApplicationCommandPermissionsTokenMissing',
 
-  /** @deprecated WebSocket errors are now handled in `@discordjs/ws` */
+  /** @deprecated WebSocket errors are now handled in `@ckohen/ws` */
   WSCloseRequested = 'WSCloseRequested',
-  /** @deprecated WebSocket errors are now handled in `@discordjs/ws` */
+  /** @deprecated WebSocket errors are now handled in `@ckohen/ws` */
   WSConnectionExists = 'WSConnectionExists',
-  /** @deprecated WebSocket errors are now handled in `@discordjs/ws` */
+  /** @deprecated WebSocket errors are now handled in `@ckohen/ws` */
   WSNotOpen = 'WSNotOpen',
   /** @deprecated No longer in use */
   ManagerDestroyed = 'ManagerDestroyed',
 
   BitFieldInvalid = 'BitFieldInvalid',
 
-  /** @deprecated This error is now handled in `@discordjs/ws` */
+  /** @deprecated This error is now handled in `@ckohen/ws` */
   ShardingInvalid = 'ShardingInvalid',
-  /** @deprecated This error is now handled in `@discordjs/ws` */
+  /** @deprecated This error is now handled in `@ckohen/ws` */
   ShardingRequired = 'ShardingRequired',
-  /** @deprecated This error is now handled in `@discordjs/ws` */
+  /** @deprecated This error is now handled in `@ckohen/ws` */
   InvalidIntents = 'InvalidIntents',
-  /** @deprecated This error is now handled in `@discordjs/ws` */
+  /** @deprecated This error is now handled in `@ckohen/ws` */
   DisallowedIntents = 'DisallowedIntents',
   ShardingNoShards = 'ShardingNoShards',
   ShardingInProcess = 'ShardingInProcess',
@@ -3860,22 +3855,22 @@ export enum DiscordjsErrorCodes {
 
   InviteOptionsMissingChannel = 'InviteOptionsMissingChannel',
 
-  /** @deprecated Button validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Button validation errors are now handled in `@ckohen/builders` */
   ButtonLabel = 'ButtonLabel',
-  /** @deprecated Button validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Button validation errors are now handled in `@ckohen/builders` */
   ButtonURL = 'ButtonURL',
-  /** @deprecated Button validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Button validation errors are now handled in `@ckohen/builders` */
   ButtonCustomId = 'ButtonCustomId',
 
-  /** @deprecated Select Menu validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Select Menu validation errors are now handled in `@ckohen/builders` */
   SelectMenuCustomId = 'SelectMenuCustomId',
-  /** @deprecated Select Menu validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Select Menu validation errors are now handled in `@ckohen/builders` */
   SelectMenuPlaceholder = 'SelectMenuPlaceholder',
-  /** @deprecated Select Menu validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Select Menu validation errors are now handled in `@ckohen/builders` */
   SelectOptionLabel = 'SelectOptionLabel',
-  /** @deprecated Select Menu validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Select Menu validation errors are now handled in `@ckohen/builders` */
   SelectOptionValue = 'SelectOptionValue',
-  /** @deprecated Select Menu validation errors are now handled in `@discordjs/builders` */
+  /** @deprecated Select Menu validation errors are now handled in `@ckohen/builders` */
   SelectOptionDescription = 'SelectOptionDescription',
 
   InteractionCollectorError = 'InteractionCollectorError',
@@ -3893,9 +3888,9 @@ export enum DiscordjsErrorCodes {
 
   ReqResourceType = 'ReqResourceType',
 
-  /** @deprecated This error is now handled in `@discordjs/rest` */
+  /** @deprecated This error is now handled in `@ckohen/rest` */
   ImageFormat = 'ImageFormat',
-  /** @deprecated This error is now handled in `@discordjs/rest` */
+  /** @deprecated This error is now handled in `@ckohen/rest` */
   ImageSize = 'ImageSize',
 
   MessageBulkDeleteType = 'MessageBulkDeleteType',
@@ -5325,10 +5320,10 @@ export interface ClientUserEditOptions {
 }
 
 export interface CloseEvent {
-  /** @deprecated Not used anymore since using {@link @discordjs/ws#(WebSocketManager:class)} internally */
+  /** @deprecated Not used anymore since using {@link @ckohen/ws#(WebSocketManager:class)} internally */
   wasClean: boolean;
   code: number;
-  /** @deprecated Not used anymore since using {@link @discordjs/ws#(WebSocketManager:class)} internally */
+  /** @deprecated Not used anymore since using {@link @ckohen/ws#(WebSocketManager:class)} internally */
   reason: string;
 }
 
@@ -6927,7 +6922,7 @@ export type Serialized<Value> = Value extends symbol | bigint | (() => any)
 //#region Voice
 
 /**
- * @internal Use `DiscordGatewayAdapterLibraryMethods` from `@discordjs/voice` instead.
+ * @internal Use `DiscordGatewayAdapterLibraryMethods` from `@ckohen/voice` instead.
  */
 export interface InternalDiscordGatewayAdapterLibraryMethods {
   onVoiceServerUpdate(data: GatewayVoiceServerUpdateDispatchData): void;
@@ -6936,7 +6931,7 @@ export interface InternalDiscordGatewayAdapterLibraryMethods {
 }
 
 /**
- * @internal Use `DiscordGatewayAdapterImplementerMethods` from `@discordjs/voice` instead.
+ * @internal Use `DiscordGatewayAdapterImplementerMethods` from `@ckohen/voice` instead.
  */
 export interface InternalDiscordGatewayAdapterImplementerMethods {
   sendPayload(payload: unknown): boolean;
@@ -6944,7 +6939,7 @@ export interface InternalDiscordGatewayAdapterImplementerMethods {
 }
 
 /**
- * @internal Use `DiscordGatewayAdapterCreator` from `@discordjs/voice` instead.
+ * @internal Use `DiscordGatewayAdapterCreator` from `@ckohen/voice` instead.
  */
 export type InternalDiscordGatewayAdapterCreator = (
   methods: InternalDiscordGatewayAdapterLibraryMethods,
@@ -6954,8 +6949,8 @@ export type InternalDiscordGatewayAdapterCreator = (
 
 // External
 export * from 'discord-api-types/v10';
-export * from '@discordjs/builders';
-export * from '@discordjs/formatters';
-export * from '@discordjs/rest';
-export * from '@discordjs/util';
-export * from '@discordjs/ws';
+export * from '@ckohen/builders';
+export * from '@ckohen/formatters';
+export * from '@ckohen/rest';
+export * from '@ckohen/util';
+export * from '@ckohen/ws';

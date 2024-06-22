@@ -55,7 +55,7 @@ export function DocsLink({
 }: PropsWithChildren<DocsLinkOptions>) {
 	// In the case of no type and no parent, this will default to the entry point of the respective documentation.
 	let url = docs === PACKAGES[0] ? `${BASE_URL_LEGACY}/${VERSION}/general/welcome` : `${BASE_URL}/${docs}/stable`;
-	let text = `${docs === PACKAGES[0] ? '' : '@discordjs/'}${docs}`;
+	let text = `${docs === PACKAGES[0] ? '' : '@ckohen/'}${docs}`;
 
 	// If there is a type and parent, we need to do some parsing.
 	if (type && parent) {

@@ -481,7 +481,7 @@ All notable changes to this project will be documented in this file.
 
 - **Util:** Escape more markdown characters (#8701) ([7b8966b](https://github.com/discordjs/discord.js/commit/7b8966bca156db79933403289741893a6e10ccd5))
 - **GuildChannelManager:** Allow creating channels with a default auto archive duration (#8693) ([628759b](https://github.com/discordjs/discord.js/commit/628759bcff8b0d4c77926cee2b8c18d8fdb4c260))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 - **ForumChannel:** Add `defaultSortOrder` (#8633) ([883f6e9](https://github.com/discordjs/discord.js/commit/883f6e9202a559c986f4b15fccb422b5aea7bea8))
 
 ## Refactor
@@ -936,7 +936,7 @@ All notable changes to this project will be documented in this file.
 - Return only boolean for `disabled` (#8965) ([6614603](https://github.com/discordjs/discord.js/commit/66146033268a4db1279b2eaee4bd418f326c0d4b))
 - Export missing `escapeX()` functions (#8944) ([25c27ea](https://github.com/discordjs/discord.js/commit/25c27eac1417e75c9b601b17cf177b1f47b699a9))
 - **WebSocketShard:** Only cleanup the connection if a connection still exists (#8946) ([5eab5fc](https://github.com/discordjs/discord.js/commit/5eab5fc06ca6be36ecf1557f2ad29a670d4d5ae7))
-- Add `@discordjs/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
+- Add `@ckohen/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
 - **resolveColor:** Invalid colors (#8933) ([c76e170](https://github.com/discordjs/discord.js/commit/c76e17078602914c3e1d227a3acc98eaa99c18d4))
 - **WebSocketShard:** Clear listeners on reconnect (#8927) ([aa8c57d](https://github.com/discordjs/discord.js/commit/aa8c57dab60104549e28451abf35c0387595d67e))
 - Re-export formatters (#8909) ([b14604a](https://github.com/discordjs/discord.js/commit/b14604abdecca575b1fca693c1593e3585bcca8c))
@@ -1075,7 +1075,7 @@ All notable changes to this project will be documented in this file.
 
 - **Util:** Escape more markdown characters (#8701) ([7b8966b](https://github.com/discordjs/discord.js/commit/7b8966bca156db79933403289741893a6e10ccd5))
 - **GuildChannelManager:** Allow creating channels with a default auto archive duration (#8693) ([628759b](https://github.com/discordjs/discord.js/commit/628759bcff8b0d4c77926cee2b8c18d8fdb4c260))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 - **ForumChannel:** Add `defaultSortOrder` (#8633) ([883f6e9](https://github.com/discordjs/discord.js/commit/883f6e9202a559c986f4b15fccb422b5aea7bea8))
 
 ## Refactor
@@ -1580,7 +1580,7 @@ All notable changes to this project will be documented in this file.
 - Replace `WSCodes`, `WSEvents`, and `InviteScopes` with `discord-api-types` equivalent (#7409) ([cc25455](https://github.com/discordjs/discord.js/commit/cc25455d2c75177e3eddc880b7fd53cb122387c4))
 - Make constants enums top level and `PascalCase` (#7379) ([d8184f9](https://github.com/discordjs/discord.js/commit/d8184f94dd08daab37195f52828e06af5ed1c1e0))
 - **`Bitfield`:** Use discord-api-types enums instead (#7313) ([fbb1d03](https://github.com/discordjs/discord.js/commit/fbb1d0328bcd517027ad2eedb8753d17489ed851))
-- Use `@discordjs/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
+- Use `@ckohen/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
 - Switch to /builders `Embed` (#7067) ([d2d3a80](https://github.com/discordjs/discord.js/commit/d2d3a80c556a104099a1ddb1b24f1b921c553257))
 - Remove transformPermissions (#7303) ([b4ed8fd](https://github.com/discordjs/discord.js/commit/b4ed8fd3ed953085cd908b2845d4384c8555d3a2))
 - Remove VoiceChannel#editable (#7291) ([164589c](https://github.com/discordjs/discord.js/commit/164589c5516a847457444d11098981d557b6778b))
@@ -1936,7 +1936,7 @@ All notable changes to this project will be documented in this file.
 - Return only boolean for `disabled` (#8965) ([6614603](https://github.com/discordjs/discord.js/commit/66146033268a4db1279b2eaee4bd418f326c0d4b))
 - Export missing `escapeX()` functions (#8944) ([25c27ea](https://github.com/discordjs/discord.js/commit/25c27eac1417e75c9b601b17cf177b1f47b699a9))
 - **WebSocketShard:** Only cleanup the connection if a connection still exists (#8946) ([5eab5fc](https://github.com/discordjs/discord.js/commit/5eab5fc06ca6be36ecf1557f2ad29a670d4d5ae7))
-- Add `@discordjs/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
+- Add `@ckohen/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
 - **resolveColor:** Invalid colors (#8933) ([c76e170](https://github.com/discordjs/discord.js/commit/c76e17078602914c3e1d227a3acc98eaa99c18d4))
 - **WebSocketShard:** Clear listeners on reconnect (#8927) ([aa8c57d](https://github.com/discordjs/discord.js/commit/aa8c57dab60104549e28451abf35c0387595d67e))
 - Re-export formatters (#8909) ([b14604a](https://github.com/discordjs/discord.js/commit/b14604abdecca575b1fca693c1593e3585bcca8c))
@@ -2075,7 +2075,7 @@ All notable changes to this project will be documented in this file.
 
 - **Util:** Escape more markdown characters (#8701) ([7b8966b](https://github.com/discordjs/discord.js/commit/7b8966bca156db79933403289741893a6e10ccd5))
 - **GuildChannelManager:** Allow creating channels with a default auto archive duration (#8693) ([628759b](https://github.com/discordjs/discord.js/commit/628759bcff8b0d4c77926cee2b8c18d8fdb4c260))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 - **ForumChannel:** Add `defaultSortOrder` (#8633) ([883f6e9](https://github.com/discordjs/discord.js/commit/883f6e9202a559c986f4b15fccb422b5aea7bea8))
 
 ## Refactor
@@ -2580,7 +2580,7 @@ All notable changes to this project will be documented in this file.
 - Replace `WSCodes`, `WSEvents`, and `InviteScopes` with `discord-api-types` equivalent (#7409) ([cc25455](https://github.com/discordjs/discord.js/commit/cc25455d2c75177e3eddc880b7fd53cb122387c4))
 - Make constants enums top level and `PascalCase` (#7379) ([d8184f9](https://github.com/discordjs/discord.js/commit/d8184f94dd08daab37195f52828e06af5ed1c1e0))
 - **`Bitfield`:** Use discord-api-types enums instead (#7313) ([fbb1d03](https://github.com/discordjs/discord.js/commit/fbb1d0328bcd517027ad2eedb8753d17489ed851))
-- Use `@discordjs/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
+- Use `@ckohen/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
 - Switch to /builders `Embed` (#7067) ([d2d3a80](https://github.com/discordjs/discord.js/commit/d2d3a80c556a104099a1ddb1b24f1b921c553257))
 - Remove transformPermissions (#7303) ([b4ed8fd](https://github.com/discordjs/discord.js/commit/b4ed8fd3ed953085cd908b2845d4384c8555d3a2))
 - Remove VoiceChannel#editable (#7291) ([164589c](https://github.com/discordjs/discord.js/commit/164589c5516a847457444d11098981d557b6778b))
@@ -2905,7 +2905,7 @@ All notable changes to this project will be documented in this file.
 - Return only boolean for `disabled` (#8965) ([6614603](https://github.com/discordjs/discord.js/commit/66146033268a4db1279b2eaee4bd418f326c0d4b))
 - Export missing `escapeX()` functions (#8944) ([25c27ea](https://github.com/discordjs/discord.js/commit/25c27eac1417e75c9b601b17cf177b1f47b699a9))
 - **WebSocketShard:** Only cleanup the connection if a connection still exists (#8946) ([5eab5fc](https://github.com/discordjs/discord.js/commit/5eab5fc06ca6be36ecf1557f2ad29a670d4d5ae7))
-- Add `@discordjs/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
+- Add `@ckohen/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
 - **resolveColor:** Invalid colors (#8933) ([c76e170](https://github.com/discordjs/discord.js/commit/c76e17078602914c3e1d227a3acc98eaa99c18d4))
 - **WebSocketShard:** Clear listeners on reconnect (#8927) ([aa8c57d](https://github.com/discordjs/discord.js/commit/aa8c57dab60104549e28451abf35c0387595d67e))
 - Re-export formatters (#8909) ([b14604a](https://github.com/discordjs/discord.js/commit/b14604abdecca575b1fca693c1593e3585bcca8c))
@@ -3044,7 +3044,7 @@ All notable changes to this project will be documented in this file.
 
 - **Util:** Escape more markdown characters (#8701) ([7b8966b](https://github.com/discordjs/discord.js/commit/7b8966bca156db79933403289741893a6e10ccd5))
 - **GuildChannelManager:** Allow creating channels with a default auto archive duration (#8693) ([628759b](https://github.com/discordjs/discord.js/commit/628759bcff8b0d4c77926cee2b8c18d8fdb4c260))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 - **ForumChannel:** Add `defaultSortOrder` (#8633) ([883f6e9](https://github.com/discordjs/discord.js/commit/883f6e9202a559c986f4b15fccb422b5aea7bea8))
 
 ## Refactor
@@ -3549,7 +3549,7 @@ All notable changes to this project will be documented in this file.
 - Replace `WSCodes`, `WSEvents`, and `InviteScopes` with `discord-api-types` equivalent (#7409) ([cc25455](https://github.com/discordjs/discord.js/commit/cc25455d2c75177e3eddc880b7fd53cb122387c4))
 - Make constants enums top level and `PascalCase` (#7379) ([d8184f9](https://github.com/discordjs/discord.js/commit/d8184f94dd08daab37195f52828e06af5ed1c1e0))
 - **`Bitfield`:** Use discord-api-types enums instead (#7313) ([fbb1d03](https://github.com/discordjs/discord.js/commit/fbb1d0328bcd517027ad2eedb8753d17489ed851))
-- Use `@discordjs/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
+- Use `@ckohen/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
 - Switch to /builders `Embed` (#7067) ([d2d3a80](https://github.com/discordjs/discord.js/commit/d2d3a80c556a104099a1ddb1b24f1b921c553257))
 - Remove transformPermissions (#7303) ([b4ed8fd](https://github.com/discordjs/discord.js/commit/b4ed8fd3ed953085cd908b2845d4384c8555d3a2))
 - Remove VoiceChannel#editable (#7291) ([164589c](https://github.com/discordjs/discord.js/commit/164589c5516a847457444d11098981d557b6778b))
@@ -3874,7 +3874,7 @@ All notable changes to this project will be documented in this file.
 - Return only boolean for `disabled` (#8965) ([6614603](https://github.com/discordjs/discord.js/commit/66146033268a4db1279b2eaee4bd418f326c0d4b))
 - Export missing `escapeX()` functions (#8944) ([25c27ea](https://github.com/discordjs/discord.js/commit/25c27eac1417e75c9b601b17cf177b1f47b699a9))
 - **WebSocketShard:** Only cleanup the connection if a connection still exists (#8946) ([5eab5fc](https://github.com/discordjs/discord.js/commit/5eab5fc06ca6be36ecf1557f2ad29a670d4d5ae7))
-- Add `@discordjs/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
+- Add `@ckohen/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
 - **resolveColor:** Invalid colors (#8933) ([c76e170](https://github.com/discordjs/discord.js/commit/c76e17078602914c3e1d227a3acc98eaa99c18d4))
 - **WebSocketShard:** Clear listeners on reconnect (#8927) ([aa8c57d](https://github.com/discordjs/discord.js/commit/aa8c57dab60104549e28451abf35c0387595d67e))
 - Re-export formatters (#8909) ([b14604a](https://github.com/discordjs/discord.js/commit/b14604abdecca575b1fca693c1593e3585bcca8c))
@@ -4013,7 +4013,7 @@ All notable changes to this project will be documented in this file.
 
 - **Util:** Escape more markdown characters (#8701) ([7b8966b](https://github.com/discordjs/discord.js/commit/7b8966bca156db79933403289741893a6e10ccd5))
 - **GuildChannelManager:** Allow creating channels with a default auto archive duration (#8693) ([628759b](https://github.com/discordjs/discord.js/commit/628759bcff8b0d4c77926cee2b8c18d8fdb4c260))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 - **ForumChannel:** Add `defaultSortOrder` (#8633) ([883f6e9](https://github.com/discordjs/discord.js/commit/883f6e9202a559c986f4b15fccb422b5aea7bea8))
 
 ## Refactor
@@ -4518,7 +4518,7 @@ All notable changes to this project will be documented in this file.
 - Replace `WSCodes`, `WSEvents`, and `InviteScopes` with `discord-api-types` equivalent (#7409) ([cc25455](https://github.com/discordjs/discord.js/commit/cc25455d2c75177e3eddc880b7fd53cb122387c4))
 - Make constants enums top level and `PascalCase` (#7379) ([d8184f9](https://github.com/discordjs/discord.js/commit/d8184f94dd08daab37195f52828e06af5ed1c1e0))
 - **`Bitfield`:** Use discord-api-types enums instead (#7313) ([fbb1d03](https://github.com/discordjs/discord.js/commit/fbb1d0328bcd517027ad2eedb8753d17489ed851))
-- Use `@discordjs/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
+- Use `@ckohen/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
 - Switch to /builders `Embed` (#7067) ([d2d3a80](https://github.com/discordjs/discord.js/commit/d2d3a80c556a104099a1ddb1b24f1b921c553257))
 - Remove transformPermissions (#7303) ([b4ed8fd](https://github.com/discordjs/discord.js/commit/b4ed8fd3ed953085cd908b2845d4384c8555d3a2))
 - Remove VoiceChannel#editable (#7291) ([164589c](https://github.com/discordjs/discord.js/commit/164589c5516a847457444d11098981d557b6778b))
@@ -4832,7 +4832,7 @@ All notable changes to this project will be documented in this file.
 - Return only boolean for `disabled` (#8965) ([6614603](https://github.com/discordjs/discord.js/commit/66146033268a4db1279b2eaee4bd418f326c0d4b))
 - Export missing `escapeX()` functions (#8944) ([25c27ea](https://github.com/discordjs/discord.js/commit/25c27eac1417e75c9b601b17cf177b1f47b699a9))
 - **WebSocketShard:** Only cleanup the connection if a connection still exists (#8946) ([5eab5fc](https://github.com/discordjs/discord.js/commit/5eab5fc06ca6be36ecf1557f2ad29a670d4d5ae7))
-- Add `@discordjs/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
+- Add `@ckohen/formatters` to dependency list (#8939) ([18b3a19](https://github.com/discordjs/discord.js/commit/18b3a19810a6436fa8bb4b490ec5137eaecbd465))
 - **resolveColor:** Invalid colors (#8933) ([c76e170](https://github.com/discordjs/discord.js/commit/c76e17078602914c3e1d227a3acc98eaa99c18d4))
 - **WebSocketShard:** Clear listeners on reconnect (#8927) ([aa8c57d](https://github.com/discordjs/discord.js/commit/aa8c57dab60104549e28451abf35c0387595d67e))
 - Re-export formatters (#8909) ([b14604a](https://github.com/discordjs/discord.js/commit/b14604abdecca575b1fca693c1593e3585bcca8c))
@@ -4971,7 +4971,7 @@ All notable changes to this project will be documented in this file.
 
 - **Util:** Escape more markdown characters (#8701) ([7b8966b](https://github.com/discordjs/discord.js/commit/7b8966bca156db79933403289741893a6e10ccd5))
 - **GuildChannelManager:** Allow creating channels with a default auto archive duration (#8693) ([628759b](https://github.com/discordjs/discord.js/commit/628759bcff8b0d4c77926cee2b8c18d8fdb4c260))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 - **ForumChannel:** Add `defaultSortOrder` (#8633) ([883f6e9](https://github.com/discordjs/discord.js/commit/883f6e9202a559c986f4b15fccb422b5aea7bea8))
 
 ## Refactor
@@ -5476,7 +5476,7 @@ All notable changes to this project will be documented in this file.
 - Replace `WSCodes`, `WSEvents`, and `InviteScopes` with `discord-api-types` equivalent (#7409) ([cc25455](https://github.com/discordjs/discord.js/commit/cc25455d2c75177e3eddc880b7fd53cb122387c4))
 - Make constants enums top level and `PascalCase` (#7379) ([d8184f9](https://github.com/discordjs/discord.js/commit/d8184f94dd08daab37195f52828e06af5ed1c1e0))
 - **`Bitfield`:** Use discord-api-types enums instead (#7313) ([fbb1d03](https://github.com/discordjs/discord.js/commit/fbb1d0328bcd517027ad2eedb8753d17489ed851))
-- Use `@discordjs/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
+- Use `@ckohen/rest` (#7298) ([ec0fba1](https://github.com/discordjs/discord.js/commit/ec0fba1ed0d3c5b1bb18171ece6fe5ee42d48497))
 - Switch to /builders `Embed` (#7067) ([d2d3a80](https://github.com/discordjs/discord.js/commit/d2d3a80c556a104099a1ddb1b24f1b921c553257))
 - Remove transformPermissions (#7303) ([b4ed8fd](https://github.com/discordjs/discord.js/commit/b4ed8fd3ed953085cd908b2845d4384c8555d3a2))
 - Remove VoiceChannel#editable (#7291) ([164589c](https://github.com/discordjs/discord.js/commit/164589c5516a847457444d11098981d557b6778b))

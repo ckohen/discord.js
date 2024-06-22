@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises';
-import { generateAllIndices } from '@discordjs/scripts';
+import { generateAllIndices } from '@ckohen/scripts';
 
 console.log('Generating all indices...');
 await generateAllIndices({

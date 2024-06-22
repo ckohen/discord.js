@@ -1,6 +1,6 @@
 /* eslint-disable jsdoc/check-param-names */
 
-import type { RawFile, RequestData, REST } from '@discordjs/rest';
+import type { RawFile, RequestData, REST } from '@ckohen/rest';
 import {
 	InteractionResponseType,
 	Routes,

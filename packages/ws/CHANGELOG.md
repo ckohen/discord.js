@@ -2,13 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-# [@discordjs/ws@1.1.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@1.1.0...@discordjs/ws@1.1.1) - (2024-06-02)
+# [@ckohen/ws@1.1.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@1.1.0...@ckohen/ws@1.1.1) - (2024-06-02)
 
 ## Bug Fixes
 
 - Deno compat (#10271) ([616208b](https://github.com/discordjs/discord.js/commit/616208ba7766ac66a8969ffd2cb7b341fdc2c67b))
 
-# [@discordjs/ws@1.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@1.0.2...@discordjs/ws@1.1.0) - (2024-05-04)
+# [@ckohen/ws@1.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@1.0.2...@ckohen/ws@1.1.0) - (2024-05-04)
 
 ## Bug Fixes
 
@@ -34,7 +34,7 @@ All notable changes to this project will be documented in this file.
 - **WebSocketShard:** Payload sending (#10098) ([c878b65](https://github.com/discordjs/discord.js/commit/c878b65ef586cd9b42f765515f87f43cb6165f61))
 - Use interfaces for AsyncEventEmitter event maps (#10044) ([adfd9cd](https://github.com/discordjs/discord.js/commit/adfd9cd3b32cfabdcc45ec90f535b2852a3ca4a6))
 
-# [@discordjs/ws@1.0.2](https://github.com/discordjs/discord.js/compare/@discordjs/ws@1.0.1...@discordjs/ws@1.0.2) - (2023-11-12)
+# [@ckohen/ws@1.0.2](https://github.com/discordjs/discord.js/compare/@ckohen/ws@1.0.1...@ckohen/ws@1.0.2) - (2023-11-12)
 
 ## Bug Fixes
 
@@ -44,13 +44,13 @@ All notable changes to this project will be documented in this file.
 
 - **create-discord-bot:** Support bun in create-discord-bot (#9798) ([7157748](https://github.com/discordjs/discord.js/commit/7157748fe3a69265896adf0450cd3f37acbcf97b))
 
-# [@discordjs/ws@1.0.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@1.0.0...@discordjs/ws@1.0.1) - (2023-08-17)
+# [@ckohen/ws@1.0.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@1.0.0...@ckohen/ws@1.0.1) - (2023-08-17)
 
 ## Documentation
 
 - Update Node.js requirement to 16.11.0 (#9764) ([188877c](https://github.com/discordjs/discord.js/commit/188877c50af70f0d5cffb246620fa277435c6ce6))
 
-# [@discordjs/ws@1.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.3...@discordjs/ws@1.0.0) - (2023-07-31)
+# [@ckohen/ws@1.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.3...@ckohen/ws@1.0.0) - (2023-07-31)
 
 ## Bug Fixes
 
@@ -66,7 +66,7 @@ from `@vladfrangu/async_event_emitter`, which aids in cross-compatibility
 between Node, Deno, Bun, CF Workers, Vercel Functions, etc.
   - **BREAKING CHANGE:** DefaultUserAgentAppendix has been adapted to support multiple
 different platforms (previously mentioned Deno, Bun, CF Workers, etc)
-  - **BREAKING CHANGE:** the entry point for `@discordjs/rest` will now differ
+  - **BREAKING CHANGE:** the entry point for `@ckohen/rest` will now differ
 in non-node-like environments (CF Workers, etc.)
   - **Co-authored-by:** Suneet Tipirneni <77477100+suneettipirneni@users.noreply.github.com>
   - **Co-authored-by:** Jiralite <33201955+Jiralite@users.noreply.github.com>
@@ -82,7 +82,7 @@ in non-node-like environments (CF Workers, etc.)
   - **BREAKING CHANGE:** Many underlying internals have changed, some of which were exported.
   - **BREAKING CHANGE:** `DefaultRestOptions` used to contain a default `agent`, which is now set to `null` instead.
 
-# [@discordjs/ws@0.8.3](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.2...@discordjs/ws@0.8.3) - (2023-05-06)
+# [@ckohen/ws@0.8.3](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.2...@ckohen/ws@0.8.3) - (2023-05-06)
 
 ## Bug Fixes
 
@@ -92,13 +92,13 @@ in non-node-like environments (CF Workers, etc.)
 
 - **ws:** Fix tests (#9520) ([3e80f0b](https://github.com/discordjs/discord.js/commit/3e80f0b384ea2dc14c1b60b5897e90040cab9a24))
 
-# [@discordjs/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.1...@discordjs/ws@0.8.2) - (2023-05-01)
+# [@ckohen/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.1...@ckohen/ws@0.8.2) - (2023-05-01)
 
 ## Documentation
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.0...@discordjs/ws@0.8.1) - (2023-04-16)
+# [@ckohen/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.0...@ckohen/ws@0.8.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -109,7 +109,7 @@ in non-node-like environments (CF Workers, etc.)
 - Abstract identify throttling and correct max_concurrency handling (#9375) ([02dfaf1](https://github.com/discordjs/discord.js/commit/02dfaf1aa2c798315d0dd7f809cc469771b36ffc))
 - **WebSocketShard:** WaitForEvent and its error handling (#9282) ([dcf58d8](https://github.com/discordjs/discord.js/commit/dcf58d81401387a5e157b20829aa56638e106e9d))
 
-# [@discordjs/ws@1.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.3...@discordjs/ws@1.0.0) - (2023-07-31)
+# [@ckohen/ws@1.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.3...@ckohen/ws@1.0.0) - (2023-07-31)
 
 ## Bug Fixes
 
@@ -125,7 +125,7 @@ from `@vladfrangu/async_event_emitter`, which aids in cross-compatibility
 between Node, Deno, Bun, CF Workers, Vercel Functions, etc.
   - **BREAKING CHANGE:** DefaultUserAgentAppendix has been adapted to support multiple
 different platforms (previously mentioned Deno, Bun, CF Workers, etc)
-  - **BREAKING CHANGE:** the entry point for `@discordjs/rest` will now differ
+  - **BREAKING CHANGE:** the entry point for `@ckohen/rest` will now differ
 in non-node-like environments (CF Workers, etc.)
   - **Co-authored-by:** Suneet Tipirneni <77477100+suneettipirneni@users.noreply.github.com>
   - **Co-authored-by:** Jiralite <33201955+Jiralite@users.noreply.github.com>
@@ -141,7 +141,7 @@ in non-node-like environments (CF Workers, etc.)
   - **BREAKING CHANGE:** Many underlying internals have changed, some of which were exported.
   - **BREAKING CHANGE:** `DefaultRestOptions` used to contain a default `agent`, which is now set to `null` instead.
 
-# [@discordjs/ws@0.8.3](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.2...@discordjs/ws@0.8.3) - (2023-05-06)
+# [@ckohen/ws@0.8.3](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.2...@ckohen/ws@0.8.3) - (2023-05-06)
 
 ## Bug Fixes
 
@@ -151,13 +151,13 @@ in non-node-like environments (CF Workers, etc.)
 
 - **ws:** Fix tests (#9520) ([3e80f0b](https://github.com/discordjs/discord.js/commit/3e80f0b384ea2dc14c1b60b5897e90040cab9a24))
 
-# [@discordjs/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.1...@discordjs/ws@0.8.2) - (2023-05-01)
+# [@ckohen/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.1...@ckohen/ws@0.8.2) - (2023-05-01)
 
 ## Documentation
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.0...@discordjs/ws@0.8.1) - (2023-04-16)
+# [@ckohen/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.0...@ckohen/ws@0.8.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -168,7 +168,7 @@ in non-node-like environments (CF Workers, etc.)
 - Abstract identify throttling and correct max_concurrency handling (#9375) ([02dfaf1](https://github.com/discordjs/discord.js/commit/02dfaf1aa2c798315d0dd7f809cc469771b36ffc))
 - **WebSocketShard:** WaitForEvent and its error handling (#9282) ([dcf58d8](https://github.com/discordjs/discord.js/commit/dcf58d81401387a5e157b20829aa56638e106e9d))
 
-# [@discordjs/ws@0.8.3](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.2...@discordjs/ws@0.8.3) - (2023-05-06)
+# [@ckohen/ws@0.8.3](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.2...@ckohen/ws@0.8.3) - (2023-05-06)
 
 ## Bug Fixes
 
@@ -178,13 +178,13 @@ in non-node-like environments (CF Workers, etc.)
 
 - **ws:** Fix tests (#9520) ([3e80f0b](https://github.com/discordjs/discord.js/commit/3e80f0b384ea2dc14c1b60b5897e90040cab9a24))
 
-# [@discordjs/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.1...@discordjs/ws@0.8.2) - (2023-05-01)
+# [@ckohen/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.1...@ckohen/ws@0.8.2) - (2023-05-01)
 
 ## Documentation
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.0...@discordjs/ws@0.8.1) - (2023-04-16)
+# [@ckohen/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.0...@ckohen/ws@0.8.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -195,13 +195,13 @@ in non-node-like environments (CF Workers, etc.)
 - Abstract identify throttling and correct max_concurrency handling (#9375) ([02dfaf1](https://github.com/discordjs/discord.js/commit/02dfaf1aa2c798315d0dd7f809cc469771b36ffc))
 - **WebSocketShard:** WaitForEvent and its error handling (#9282) ([dcf58d8](https://github.com/discordjs/discord.js/commit/dcf58d81401387a5e157b20829aa56638e106e9d))
 
-# [@discordjs/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.1...@discordjs/ws@0.8.2) - (2023-05-01)
+# [@ckohen/ws@0.8.2](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.1...@ckohen/ws@0.8.2) - (2023-05-01)
 
 ## Documentation
 
 - Generate static imports for types with api-extractor ([98a76db](https://github.com/discordjs/discord.js/commit/98a76db482879f79d6bb2fb2e5fc65ac2c34e2d9))
 
-# [@discordjs/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.0...@discordjs/ws@0.8.1) - (2023-04-16)
+# [@ckohen/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.0...@ckohen/ws@0.8.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -212,7 +212,7 @@ in non-node-like environments (CF Workers, etc.)
 - Abstract identify throttling and correct max_concurrency handling (#9375) ([02dfaf1](https://github.com/discordjs/discord.js/commit/02dfaf1aa2c798315d0dd7f809cc469771b36ffc))
 - **WebSocketShard:** WaitForEvent and its error handling (#9282) ([dcf58d8](https://github.com/discordjs/discord.js/commit/dcf58d81401387a5e157b20829aa56638e106e9d))
 
-# [@discordjs/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.8.0...@discordjs/ws@0.8.1) - (2023-04-16)
+# [@ckohen/ws@0.8.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.8.0...@ckohen/ws@0.8.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -223,7 +223,7 @@ in non-node-like environments (CF Workers, etc.)
 - Abstract identify throttling and correct max_concurrency handling (#9375) ([02dfaf1](https://github.com/discordjs/discord.js/commit/02dfaf1aa2c798315d0dd7f809cc469771b36ffc))
 - **WebSocketShard:** WaitForEvent and its error handling (#9282) ([dcf58d8](https://github.com/discordjs/discord.js/commit/dcf58d81401387a5e157b20829aa56638e106e9d))
 
-# [@discordjs/ws@0.8.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.7.0...@discordjs/ws@0.8.0) - (2023-04-01)
+# [@ckohen/ws@0.8.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.7.0...@ckohen/ws@0.8.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -236,7 +236,7 @@ in non-node-like environments (CF Workers, etc.)
 
 - **website:** Render syntax and mdx on the server (#9086) ([ee5169e](https://github.com/discordjs/discord.js/commit/ee5169e0aadd7bbfcd752aae614ec0f69602b68b))
 
-# [@discordjs/ws@0.7.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.6.0...@discordjs/ws@0.7.0) - (2023-03-12)
+# [@ckohen/ws@0.7.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.6.0...@ckohen/ws@0.7.0) - (2023-03-12)
 
 ## Bug Fixes
 
@@ -249,7 +249,7 @@ in non-node-like environments (CF Workers, etc.)
 
 - Fix typos (#9127) ([1ba1f23](https://github.com/discordjs/discord.js/commit/1ba1f238f04221ec890fc921678909b5b7d92c26))
 - Fix version export (#9049) ([8b70f49](https://github.com/discordjs/discord.js/commit/8b70f497a1207e30edebdecd12b926c981c13d28))
-- Updated @discordjs/ws README.md to include optional packages (#8973) ([4ee00b6](https://github.com/discordjs/discord.js/commit/4ee00b6534fad39da1fe54fb2c1766b264a020ca))
+- Updated @ckohen/ws README.md to include optional packages (#8973) ([4ee00b6](https://github.com/discordjs/discord.js/commit/4ee00b6534fad39da1fe54fb2c1766b264a020ca))
 
 ## Features
 
@@ -266,7 +266,7 @@ in non-node-like environments (CF Workers, etc.)
 
 - Run prettier (#9041) ([2798ba1](https://github.com/discordjs/discord.js/commit/2798ba1eb3d734f0cf2eeccd2e16cfba6804873b))
 
-# [@discordjs/ws@0.6.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.5.0...@discordjs/ws@0.6.0) - (2022-12-16)
+# [@ckohen/ws@0.6.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.5.0...@ckohen/ws@0.6.0) - (2022-12-16)
 
 ## Bug Fixes
 
@@ -280,7 +280,7 @@ in non-node-like environments (CF Workers, etc.)
 
 - **WebSocketShard:** Identify throttling (#8888) ([8f552a0](https://github.com/discordjs/discord.js/commit/8f552a0e17c0eca71063e7a4353b9b351bcdf9fd))
 
-# [@discordjs/ws@0.5.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.4.1...@discordjs/ws@0.5.0) - (2022-11-28)
+# [@ckohen/ws@0.5.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.4.1...@ckohen/ws@0.5.0) - (2022-11-28)
 
 ## Bug Fixes
 
@@ -294,13 +294,13 @@ in non-node-like environments (CF Workers, etc.)
 
 - New select menus (#8793) ([5152abf](https://github.com/discordjs/discord.js/commit/5152abf7285581abf7689e9050fdc56c4abb1e2b))
 
-# [@discordjs/ws@0.4.1](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.4.0...@discordjs/ws@0.4.1) - (2022-10-10)
+# [@ckohen/ws@0.4.1](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.4.0...@ckohen/ws@0.4.1) - (2022-10-10)
 
 ## Bug Fixes
 
 - **WebSocketShard:** Dispatch race condition (#8731) ([c2b6777](https://github.com/discordjs/discord.js/commit/c2b677759b905d6eb3ebcefcec2cb04eb38436bb))
 
-# [@discordjs/ws@0.4.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.3.0...@discordjs/ws@0.4.0) - (2022-10-08)
+# [@ckohen/ws@0.4.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.3.0...@ckohen/ws@0.4.0) - (2022-10-08)
 
 ## Bug Fixes
 
@@ -315,14 +315,14 @@ in non-node-like environments (CF Workers, etc.)
 ## Features
 
 - Web-components (#8715) ([0ac3e76](https://github.com/discordjs/discord.js/commit/0ac3e766bd9dbdeb106483fa4bb085d74de346a2))
-- Add `@discordjs/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
+- Add `@ckohen/util` (#8591) ([b2ec865](https://github.com/discordjs/discord.js/commit/b2ec865765bf94181473864a627fb63ea8173fd3))
 
 ## Refactor
 
 - Website components (#8600) ([c334157](https://github.com/discordjs/discord.js/commit/c3341570d983aea9ecc419979d5a01de658c9d67))
 - Use `eslint-config-neon` for packages. (#8579) ([edadb9f](https://github.com/discordjs/discord.js/commit/edadb9fe5dfd9ff51a3cfc9b25cb242d3f9f5241))
 
-# [@discordjs/ws@0.3.0](https://github.com/discordjs/discord.js/compare/@discordjs/ws@0.2.0...@discordjs/ws@0.3.0) - (2022-08-22)
+# [@ckohen/ws@0.3.0](https://github.com/discordjs/discord.js/compare/@ckohen/ws@0.2.0...@ckohen/ws@0.3.0) - (2022-08-22)
 
 ## Bug Fixes
 
@@ -347,7 +347,7 @@ in non-node-like environments (CF Workers, etc.)
 - **website:** Adjust typography (#8503) ([0f83402](https://github.com/discordjs/discord.js/commit/0f834029850d2448981596cf082ff59917018d66))
 - Docs design (#8487) ([4ab1d09](https://github.com/discordjs/discord.js/commit/4ab1d09997a18879a9eb9bda39df6f15aa22557e))
 
-# [@discordjs/ws@0.2.0](https://github.com/discordjs/discord.js/tree/@discordjs/ws@0.2.0) - (2022-07-30)
+# [@ckohen/ws@0.2.0](https://github.com/discordjs/discord.js/tree/@ckohen/ws@0.2.0) - (2022-07-30)
 
 ## Bug Fixes
 
@@ -356,4 +356,4 @@ in non-node-like environments (CF Workers, etc.)
 
 ## Features
 
-- @discordjs/ws (#8260) ([748d727](https://github.com/discordjs/discord.js/commit/748d7271c45796479a29d8ed3101421de09ef867))
+- @ckohen/ws (#8260) ([748d727](https://github.com/discordjs/discord.js/commit/748d7271c45796479a29d8ed3101421de09ef867))

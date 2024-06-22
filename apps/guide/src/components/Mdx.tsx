@@ -1,6 +1,6 @@
 'use client';
 
-import { Alert, Section, DiscordMessages, DiscordMessage, DiscordMessageEmbed } from '@discordjs/ui';
+import { Alert, Section, DiscordMessages, DiscordMessage, DiscordMessageEmbed } from '@ckohen/ui';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import { DocsLink } from '~/components/DocsLink';
 import { ResultingCode } from '~/components/ResultingCode';

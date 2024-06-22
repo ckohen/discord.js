@@ -1,7 +1,7 @@
 import { createServer } from 'node:http';
 import process from 'node:process';
-import { proxyRequests } from '@discordjs/proxy';
-import { REST } from '@discordjs/rest';
+import { proxyRequests } from '@ckohen/proxy';
+import { REST } from '@ckohen/rest';
 
 process.on('SIGINT', () => process.exit(0));
 

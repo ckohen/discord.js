@@ -1,7 +1,7 @@
 'use strict';
 
 const process = require('node:process');
-const { calculateShardId } = require('@discordjs/util');
+const { calculateShardId } = require('@ckohen/util');
 const { DiscordjsError, DiscordjsTypeError, ErrorCodes } = require('../errors');
 const Events = require('../util/Events');
 const { makeError, makePlainError } = require('../util/Util');

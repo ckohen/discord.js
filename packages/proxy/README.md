@@ -6,8 +6,8 @@
 	<br />
 	<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/proxy"><img src="https://img.shields.io/npm/v/@discordjs/proxy.svg?maxAge=3600" alt="npm version" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/proxy"><img src="https://img.shields.io/npm/dt/@discordjs/proxy.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/proxy"><img src="https://img.shields.io/npm/v/@ckohen/proxy.svg?maxAge=3600" alt="npm version" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/proxy"><img src="https://img.shields.io/npm/dt/@ckohen/proxy.svg?maxAge=3600" alt="npm downloads" /></a>
 		<a href="https://github.com/discordjs/discord.js/actions"><img src="https://github.com/discordjs/discord.js/actions/workflows/test.yml/badge.svg" alt="Build status" /></a>
 		<a href="https://codecov.io/gh/discordjs/discord.js" ><img src="https://codecov.io/gh/discordjs/discord.js/branch/main/graph/badge.svg?precision=2&flag=proxy" alt="Code coverage" /></a>
 	</p>
@@ -19,17 +19,17 @@
 
 ## About
 
-`@discordjs/proxy` is a powerful wrapper around `@discordjs/rest` for running an HTTP proxy in front of Discord's API.
+`@ckohen/proxy` is a powerful wrapper around `@ckohen/rest` for running an HTTP proxy in front of Discord's API.
 
 ## Installation
 
 **Node.js 18 or newer is required.**
 
 ```sh
-npm install @discordjs/proxy
-yarn add @discordjs/proxy
-pnpm add @discordjs/proxy
-bun add @discordjs/proxy
+npm install @ckohen/proxy
+yarn add @ckohen/proxy
+pnpm add @ckohen/proxy
+bun add @ckohen/proxy
 ```
 
 ## Links
@@ -63,6 +63,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/proxy
-[npm]: https://www.npmjs.com/package/@discordjs/proxy
+[npm]: https://www.npmjs.com/package/@ckohen/proxy
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

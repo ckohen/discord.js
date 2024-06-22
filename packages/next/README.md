@@ -19,10 +19,10 @@
 **Node.js 18 or newer is required.**
 
 ```sh
-npm install @discordjs/next
-yarn add @discordjs/next
-pnpm add @discordjs/next
-bun add @discordjs/next
+npm install @ckohen/next
+yarn add @ckohen/next
+pnpm add @ckohen/next
+bun add @ckohen/next
 ```
 
 ## Links
@@ -55,6 +55,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/next
-[npm]: https://www.npmjs.com/package/@discordjs/next
+[npm]: https://www.npmjs.com/package/@ckohen/next
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

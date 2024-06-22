@@ -1,6 +1,6 @@
 'use strict';
 
-const { isJSONEncodable } = require('@discordjs/util');
+const { isJSONEncodable } = require('@ckohen/util');
 const { InteractionResponseType, MessageFlags, Routes, InteractionType } = require('discord-api-types/v10');
 const { DiscordjsError, ErrorCodes } = require('../../errors');
 const MessageFlagsBitField = require('../../util/MessageFlagsBitField');

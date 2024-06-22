@@ -1,6 +1,6 @@
-import type { REST } from '@discordjs/rest';
-import { range, type Awaitable } from '@discordjs/util';
-import { polyfillDispose } from '@discordjs/util';
+import type { REST } from '@ckohen/rest';
+import { range, type Awaitable } from '@ckohen/util';
+import { polyfillDispose } from '@ckohen/util';
 import { AsyncEventEmitter } from '@vladfrangu/async_event_emitter';
 import {
 	Routes,

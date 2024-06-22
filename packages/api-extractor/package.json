@@ -1,5 +1,5 @@
 {
-	"name": "@discordjs/api-extractor",
+	"name": "@ckohen/api-extractor",
 	"version": "7.38.1",
 	"description": "Analyze the exported API for a TypeScript library and generate reviews, documentation, and .d.ts rollups",
 	"private": true,
@@ -50,7 +50,7 @@
 		}
 	},
 	"dependencies": {
-		"@discordjs/api-extractor-model": "workspace:^",
+		"@ckohen/api-extractor-model": "workspace:^",
 		"@microsoft/tsdoc": "0.14.2",
 		"@microsoft/tsdoc-config": "0.16.2",
 		"@rushstack/node-core-library": "4.1.0",

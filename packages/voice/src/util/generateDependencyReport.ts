@@ -33,7 +33,7 @@ function findPackageJSON(
  */
 function version(name: string): string {
 	try {
-		if (name === '@discordjs/voice') {
+		if (name === '@ckohen/voice') {
 			return '[VI]{{inject}}[/VI]';
 		}
 
@@ -45,7 +45,7 @@ function version(name: string): string {
 }
 
 /**
- * Generates a report of the dependencies used by the \@discordjs/voice module.
+ * Generates a report of the dependencies used by the \@ckohen/voice module.
  * Useful for debugging.
  */
 export function generateDependencyReport() {
@@ -53,13 +53,13 @@ export function generateDependencyReport() {
 	const addVersion = (name: string) => report.push(`- ${name}: ${version(name)}`);
 	// general
 	report.push('Core Dependencies');
-	addVersion('@discordjs/voice');
+	addVersion('@ckohen/voice');
 	addVersion('prism-media');
 	report.push('');
 
 	// opus
 	report.push('Opus Libraries');
-	addVersion('@discordjs/opus');
+	addVersion('@discorjs/opus');
 	addVersion('opusscript');
 	report.push('');
 

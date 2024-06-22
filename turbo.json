@@ -11,13 +11,13 @@
 			"outputs": ["dist/**"],
 			"outputMode": "errors-only"
 		},
-		"@discordjs/ui#build-storybook": {
+		"@ckohen/ui#build-storybook": {
 			"dependsOn": ["build"],
 			"inputs": [".storybook/**/*", "src/**", "package.json", "tsconfig.json", "vite.config.ts"],
 			"outputs": ["dist/**", "storybook-static/**"],
 			"outputMode": "errors-only"
 		},
-		"@discordjs/guide#build:local": {
+		"@ckohen/guide#build:local": {
 			"dependsOn": ["^build"],
 			"inputs": [
 				"public/**",
@@ -31,7 +31,7 @@
 			"outputs": [".next/**", ".next/cache/**", ".contentlayer/**"],
 			"outputMode": "full"
 		},
-		"@discordjs/guide#build:prod": {
+		"@ckohen/guide#build:prod": {
 			"dependsOn": ["^build"],
 			"inputs": [
 				"public/**",
@@ -45,7 +45,7 @@
 			"outputs": [".next/**", ".next/cache/**", ".contentlayer/**"],
 			"outputMode": "full"
 		},
-		"@discordjs/website#build:local": {
+		"@ckohen/website#build:local": {
 			"env": ["VERCEL_ENV", "NEXT_PUBLIC_LOCAL_DEV"],
 			"dependsOn": ["^build", "^docs"],
 			"inputs": [
@@ -62,7 +62,7 @@
 			"outputs": [".next/**", ".next/cache/**", "src/assets/readme/**"],
 			"outputMode": "full"
 		},
-		"@discordjs/website#build:prod": {
+		"@ckohen/website#build:prod": {
 			"env": ["VERCEL_ENV", "NEXT_PUBLIC_LOCAL_DEV"],
 			"dependsOn": ["^build"],
 			"inputs": [
@@ -79,7 +79,7 @@
 			"outputs": [".next/**", ".next/cache/**", "src/assets/readme/**"],
 			"outputMode": "full"
 		},
-		"@discordjs/guide#generate:contentlayer": {
+		"@ckohen/guide#generate:contentlayer": {
 			"inputs": ["src/**/*.mdx"],
 			"outputs": [".contentlayer/**"],
 			"outputMode": "errors-only"
@@ -106,7 +106,7 @@
 			"outputs": [],
 			"outputMode": "errors-only"
 		},
-		"@discordjs/guide#lint": {
+		"@ckohen/guide#lint": {
 			"dependsOn": ["^build", "build:local", "generate:contentlayer"],
 			"inputs": [
 				"../../eslint.config.js",
@@ -120,7 +120,7 @@
 			"outputs": [],
 			"outputMode": "errors-only"
 		},
-		"@discordjs/website#lint": {
+		"@ckohen/website#lint": {
 			"dependsOn": ["^build", "build:local"],
 			"inputs": [
 				"../../eslint.config.js",
@@ -150,7 +150,7 @@
 			"outputs": [],
 			"outputMode": "errors-only"
 		},
-		"@discordjs/guide#format": {
+		"@ckohen/guide#format": {
 			"dependsOn": ["^build", "generate:contentlayer"],
 			"inputs": [
 				"../../eslint.config.js",
@@ -201,13 +201,13 @@
 			"cache": false,
 			"persistent": true
 		},
-		"@discordjs/guide#dev": {
+		"@ckohen/guide#dev": {
 			"dependsOn": ["^build"],
 			"outputMode": "full",
 			"cache": false,
 			"persistent": true
 		},
-		"@discordjs/website#dev": {
+		"@ckohen/website#dev": {
 			"env": ["VERCEL_ENV", "NEXT_PUBLIC_LOCAL_DEV"],
 			"dependsOn": ["^build", "^docs"],
 			"outputMode": "full",

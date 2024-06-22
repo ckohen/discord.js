@@ -1,1 +1,1 @@
-export * from '@discordjs/collection';
+export * from '@ckohen/collection';

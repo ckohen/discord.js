@@ -16,17 +16,17 @@
 
 ## About
 
-`@discordjs/util` is a collection of utility functions for use with discord.js.
+`@ckohen/util` is a collection of utility functions for use with discord.js.
 
 ## Installation
 
 **Node.js 16.11.0 or newer is required.**
 
 ```sh
-npm install @discordjs/util
-yarn add @discordjs/util
-pnpm add @discordjs/util
-bun add @discordjs/util
+npm install @ckohen/util
+yarn add @ckohen/util
+pnpm add @ckohen/util
+bun add @ckohen/util
 ```
 
 ## Links
@@ -60,6 +60,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/util
-[npm]: https://www.npmjs.com/package/@discordjs/util
+[npm]: https://www.npmjs.com/package/@ckohen/util
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

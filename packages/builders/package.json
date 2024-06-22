@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/builders",
+	"name": "@ckohen/builders",
 	"version": "1.8.2",
 	"description": "A set of builders that you can use when creating your bot",
 	"scripts": {
@@ -65,8 +65,8 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/formatters": "workspace:^",
-		"@discordjs/util": "workspace:^",
+		"@ckohen/formatters": "workspace:^",
+		"@ckohen/util": "workspace:^",
 		"@sapphire/shapeshift": "^3.9.7",
 		"discord-api-types": "0.37.90",
 		"fast-deep-equal": "^3.1.3",
@@ -74,8 +74,8 @@
 		"tslib": "^2.6.2"
 	},
 	"devDependencies": {
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/node": "16.18.60",
 		"@vitest/coverage-v8": "^1.6.0",

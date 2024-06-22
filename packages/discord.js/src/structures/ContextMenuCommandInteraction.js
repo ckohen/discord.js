@@ -1,6 +1,6 @@
 'use strict';
 
-const { lazy } = require('@discordjs/util');
+const { lazy } = require('@ckohen/util');
 const { ApplicationCommandOptionType } = require('discord-api-types/v10');
 const CommandInteraction = require('./CommandInteraction');
 const CommandInteractionOptionResolver = require('./CommandInteractionOptionResolver');

@@ -4,7 +4,7 @@
   "tsdocVersion": "0.12",
   "toolPackages": [
     {
-      "packageName": "@discordjs/api-extractor",
+      "packageName": "@ckohen/api-extractor",
       "packageVersion": "7.38.1"
     }
   ]

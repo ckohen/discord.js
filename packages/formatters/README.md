@@ -6,8 +6,8 @@
 	<br />
 	<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/formatters"><img src="https://img.shields.io/npm/v/@discordjs/formatters.svg?maxAge=3600" alt="npm version" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/formatters"><img src="https://img.shields.io/npm/dt/@discordjs/formatters.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/formatters"><img src="https://img.shields.io/npm/v/@ckohen/formatters.svg?maxAge=3600" alt="npm version" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/formatters"><img src="https://img.shields.io/npm/dt/@ckohen/formatters.svg?maxAge=3600" alt="npm downloads" /></a>
 		<a href="https://github.com/discordjs/discord.js/actions"><img src="https://github.com/discordjs/discord.js/actions/workflows/test.yml/badge.svg" alt="Build status" /></a>
 		<a href="https://codecov.io/gh/discordjs/discord.js" ><img src="https://codecov.io/gh/discordjs/discord.js/branch/main/graph/badge.svg?precision=2&flag=formatters" alt="Code coverage" /></a>
 	</p>
@@ -19,23 +19,23 @@
 
 ## About
 
-`@discordjs/formatters` is a collection of functions for formatting strings to be used on Discord.
+`@ckohen/formatters` is a collection of functions for formatting strings to be used on Discord.
 
 ## Installation
 
 **Node.js 16.11.0 or newer is required.**
 
 ```sh
-npm install @discordjs/formatters
-yarn add @discordjs/formatters
-pnpm add @discordjs/formatters
-bun add @discordjs/formatters
+npm install @ckohen/formatters
+yarn add @ckohen/formatters
+pnpm add @ckohen/formatters
+bun add @ckohen/formatters
 ```
 
 ## Example usage
 
 ````ts
-import { codeBlock } from '@discordjs/formatters';
+import { codeBlock } from '@ckohen/formatters';
 
 const formattedCode = codeBlock('hello world!');
 console.log(formattedCode);
@@ -77,6 +77,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/formatters
-[npm]: https://www.npmjs.com/package/@discordjs/formatters
+[npm]: https://www.npmjs.com/package/@ckohen/formatters
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

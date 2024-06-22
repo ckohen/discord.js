@@ -1,5 +1,5 @@
-import type { Collection } from '@discordjs/collection';
-import type { Awaitable } from '@discordjs/util';
+import type { Collection } from '@ckohen/collection';
+import type { Awaitable } from '@ckohen/util';
 import type { GatewaySendPayload } from 'discord-api-types/v10';
 import type { WebSocketShardDestroyOptions, WebSocketShardStatus } from '../../ws/WebSocketShard.js';
 

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/formatters",
+	"name": "@ckohen/formatters",
 	"version": "0.4.0",
 	"description": "A set of functions to format strings for Discord.",
 	"scripts": {
@@ -58,8 +58,8 @@
 		"discord-api-types": "0.37.90"
 	},
 	"devDependencies": {
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/node": "16.18.60",
 		"@vitest/coverage-v8": "^1.6.0",

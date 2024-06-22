@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/core",
+	"name": "@ckohen/core",
 	"version": "1.2.0",
 	"description": "A thinly abstracted wrapper around the rest API, and gateway.",
 	"scripts": {
@@ -65,16 +65,16 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/rest": "workspace:^",
-		"@discordjs/util": "workspace:^",
-		"@discordjs/ws": "workspace:^",
+		"@ckohen/rest": "workspace:^",
+		"@ckohen/util": "workspace:^",
+		"@ckohen/ws": "workspace:^",
 		"@sapphire/snowflake": "^3.5.3",
 		"@vladfrangu/async_event_emitter": "^2.2.4",
 		"discord-api-types": "0.37.90"
 	},
 	"devDependencies": {
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/node": "18.18.8",
 		"@vitest/coverage-v8": "^1.6.0",

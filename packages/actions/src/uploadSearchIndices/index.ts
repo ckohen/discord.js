@@ -1,6 +1,6 @@
 import process from 'node:process';
 import { setFailed } from '@actions/core';
-import { generateAllIndices } from '@discordjs/scripts';
+import { generateAllIndices } from '@ckohen/scripts';
 import { createPool } from '@vercel/postgres';
 import { MeiliSearch } from 'meilisearch';
 import pLimit from 'p-limit';

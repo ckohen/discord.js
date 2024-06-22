@@ -1,7 +1,7 @@
 'use strict';
 
-const { ModalBuilder: BuildersModal, ComponentBuilder } = require('@discordjs/builders');
-const { isJSONEncodable } = require('@discordjs/util');
+const { ModalBuilder: BuildersModal, ComponentBuilder } = require('@ckohen/builders');
+const { isJSONEncodable } = require('@ckohen/util');
 const { toSnakeCase } = require('../util/Transformers');
 
 /**

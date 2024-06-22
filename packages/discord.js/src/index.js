@@ -1,6 +1,6 @@
 'use strict';
 
-const { polyfillDispose } = require('@discordjs/util');
+const { polyfillDispose } = require('@ckohen/util');
 const { __exportStar } = require('tslib');
 
 polyfillDispose();
@@ -224,8 +224,8 @@ exports.WelcomeScreen = require('./structures/WelcomeScreen');
 
 // External
 __exportStar(require('discord-api-types/v10'), exports);
-__exportStar(require('@discordjs/builders'), exports);
-__exportStar(require('@discordjs/formatters'), exports);
-__exportStar(require('@discordjs/rest'), exports);
-__exportStar(require('@discordjs/util'), exports);
-__exportStar(require('@discordjs/ws'), exports);
+__exportStar(require('@ckohen/builders'), exports);
+__exportStar(require('@ckohen/formatters'), exports);
+__exportStar(require('@ckohen/rest'), exports);
+__exportStar(require('@ckohen/util'), exports);
+__exportStar(require('@ckohen/ws'), exports);

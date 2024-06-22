@@ -2,8 +2,8 @@
 
 const process = require('node:process');
 const { setTimeout, clearTimeout } = require('node:timers');
+const { makeURLSearchParams } = require('@ckohen/rest');
 const { Collection } = require('@discordjs/collection');
-const { makeURLSearchParams } = require('@discordjs/rest');
 const { Routes, RouteBases } = require('discord-api-types/v10');
 const CachedManager = require('./CachedManager');
 const ShardClientUtil = require('../sharding/ShardClientUtil');

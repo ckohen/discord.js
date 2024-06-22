@@ -20,7 +20,7 @@ import type {
 	ApiTypeAlias,
 	ApiTypeParameterListMixin,
 	ApiVariable,
-} from '@discordjs/api-extractor-model';
+} from '@ckohen/api-extractor-model';
 import {
 	Excerpt,
 	Meaning,
@@ -36,7 +36,7 @@ import {
 	ExcerptTokenKind,
 	ExcerptToken,
 	ApiOptionalMixin,
-} from '@discordjs/api-extractor-model';
+} from '@ckohen/api-extractor-model';
 import { DocNodeKind, SelectorKind, StandardTags } from '@microsoft/tsdoc';
 import type {
 	DocNode,
@@ -51,7 +51,7 @@ import type { DeclarationReference } from '@microsoft/tsdoc/lib-commonjs/beta/De
 import { PACKAGES, fetchVersionDocs, fetchVersions } from './shared.js';
 
 function resolvePackageName(packageName: string) {
-	return packageName === 'discord.js' ? packageName : `@discordjs/${packageName}`;
+	return packageName === 'discord.js' ? packageName : `@ckohen/${packageName}`;
 }
 
 function findMemberByKey(model: ApiModel, packageName: string, containerKey: string) {
@@ -165,7 +165,7 @@ function resolveCanonicalReference(
 	) {
 		const member = canonicalReference.memberReferences[0]!;
 		return {
-			package: canonicalReference.packageName?.replace('@discordjs/', ''),
+			package: canonicalReference.packageName?.replace('@ckohen/', ''),
 			item: {
 				kind: member.selector!.selector,
 				displayName: member.memberIdentifier!.identifier,
@@ -275,7 +275,7 @@ function itemExcerptText(excerpt: Excerpt, apiPackage: ApiPackage) {
 					displayName: resolved.item.displayName,
 					containerKey: resolved.item.containerKey,
 					uri: resolveItemURI(resolved.item),
-					packageName: resolved.package?.replace('@discordjs/', ''),
+					packageName: resolved.package?.replace('@ckohen/', ''),
 					version: resolved.version,
 				},
 			};
@@ -365,7 +365,7 @@ function itemTsDoc(item: DocNode, apiItem: ApiItem) {
 						text: linkText ?? foundItem?.displayName ?? resolved!.item.displayName,
 						uri: resolveItemURI(foundItem ?? resolved!.item),
 						resolvedPackage: {
-							packageName: resolved?.package ?? apiItem.getAssociatedPackage()?.displayName.replace('@discordjs/', ''),
+							packageName: resolved?.package ?? apiItem.getAssociatedPackage()?.displayName.replace('@ckohen/', ''),
 							version: resolved?.package
 								? apiItem.getAssociatedPackage()?.dependencies?.[resolved.package] ?? null
 								: null,

@@ -1,6 +1,6 @@
 'use strict';
 
-const { DefaultRestOptions, DefaultUserAgentAppendix } = require('@discordjs/rest');
+const { DefaultRestOptions, DefaultUserAgentAppendix } = require('@ckohen/rest');
 const { toSnakeCase } = require('./Transformers');
 const { version } = require('../../package.json');
 

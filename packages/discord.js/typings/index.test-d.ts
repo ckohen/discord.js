@@ -207,7 +207,7 @@ import {
   Poll,
 } from '.';
 import { expectAssignable, expectNotAssignable, expectNotType, expectType } from 'tsd';
-import type { ContextMenuCommandBuilder, SlashCommandBuilder } from '@discordjs/builders';
+import type { ContextMenuCommandBuilder, SlashCommandBuilder } from '@ckohen/builders';
 import { ReadonlyCollection } from '@discordjs/collection';
 
 // Test type transformation:

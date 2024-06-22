@@ -7,25 +7,25 @@ on:
         type: choice
         required: false
         options:
-          - discord.js
-          - '@discordjs/brokers'
-          - '@discordjs/builders'
-          - '@discordjs/collection'
-          - '@discordjs/core'
+          - '@ckohen/discord.js'
+          - '@ckohen/brokers'
+          - '@ckohen/builders'
+          - '@ckohen/collection'
+          - '@ckohen/core'
           - 'create-discord-bot'
-          - '@discordjs/docgen'
-          - '@discordjs/formatters'
-          - '@discordjs/next'
-          - '@discordjs/proxy'
-          - '@discordjs/rest'
-          - '@discordjs/util'
-          - '@discordjs/voice'
-          - '@discordjs/ws'
+          - '@ckohen/docgen'
+          - '@ckohen/formatters'
+          - '@ckohen/next'
+          - '@ckohen/proxy'
+          - '@ckohen/rest'
+          - '@ckohen/util'
+          - '@ckohen/voice'
+          - '@ckohen/ws'
       exclude:
         description: 'Comma separated list of packages to exclude from release (if not depended upon)'
         required: false
         type: string
-        default: '@discordjs/docgen,@discordjs/next'
+        default: '@ckohen/docgen,@ckohen/next'
       dry_run:
         type: boolean
         default: false
@@ -39,10 +39,12 @@ jobs:
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
-    if: github.repository_owner == 'discordjs'
+    if: github.repository_owner == 'ckohen'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: 'ci/better-release-test'
 
       - name: Install Node.js v20
         uses: actions/setup-node@v4

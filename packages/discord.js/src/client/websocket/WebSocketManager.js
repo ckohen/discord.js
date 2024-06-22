@@ -3,13 +3,13 @@
 const EventEmitter = require('node:events');
 const process = require('node:process');
 const { setImmediate } = require('node:timers');
-const { Collection } = require('@discordjs/collection');
 const {
   WebSocketManager: WSWebSocketManager,
   WebSocketShardEvents: WSWebSocketShardEvents,
   CompressionMethod,
   CloseCodes,
-} = require('@discordjs/ws');
+} = require('@ckohen/ws');
+const { Collection } = require('@discordjs/collection');
 const { GatewayCloseCodes, GatewayDispatchEvents } = require('discord-api-types/v10');
 const WebSocketShard = require('./WebSocketShard');
 const PacketHandlers = require('./handlers');
@@ -98,7 +98,7 @@ class WebSocketManager extends EventEmitter {
     this.destroyed = false;
 
     /**
-     * The internal WebSocketManager from `@discordjs/ws`.
+     * The internal WebSocketManager from `@ckohen/ws`.
      * @type {WSWebSocketManager}
      * @private
      */
@@ -220,7 +220,7 @@ class WebSocketManager extends EventEmitter {
   }
 
   /**
-   * Attaches event handlers to the internal WebSocketShardManager from `@discordjs/ws`.
+   * Attaches event handlers to the internal WebSocketShardManager from `@ckohen/ws`.
    * @private
    */
   attachEvents() {

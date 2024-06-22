@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/proxy-container",
+	"name": "@ckohen/proxy-container",
 	"version": "1.0.0",
 	"description": "Lightweight HTTP proxy for Discord's API, brought to you as a container 📦",
 	"scripts": {
@@ -45,8 +45,8 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/proxy": "workspace:^",
-		"@discordjs/rest": "workspace:^",
+		"@ckohen/proxy": "workspace:^",
+		"@ckohen/rest": "workspace:^",
 		"tslib": "^2.6.2"
 	},
 	"devDependencies": {

@@ -6,8 +6,8 @@
 	<br />
 	<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/collection"><img src="https://img.shields.io/npm/v/@discordjs/collection.svg?maxAge=3600" alt="npm version" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/collection"><img src="https://img.shields.io/npm/dt/@discordjs/collection.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/collection"><img src="https://img.shields.io/npm/v/@ckohen/collection.svg?maxAge=3600" alt="npm version" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/collection"><img src="https://img.shields.io/npm/dt/@ckohen/collection.svg?maxAge=3600" alt="npm downloads" /></a>
 		<a href="https://github.com/discordjs/discord.js/actions"><img src="https://github.com/discordjs/discord.js/actions/workflows/test.yml/badge.svg" alt="Build status" /></a>
 		<a href="https://codecov.io/gh/discordjs/discord.js" ><img src="https://codecov.io/gh/discordjs/discord.js/branch/main/graph/badge.svg?precision=2&flag=collection" alt="Code coverage" /></a>
 	</p>
@@ -19,16 +19,16 @@
 
 ## About
 
-`@discordjs/collection` is a powerful utility data structure used in discord.js.
+`@ckohen/collection` is a powerful utility data structure used in discord.js.
 
 ## Installation
 
 **Node.js 18 or newer is required.**
 
 ```sh
-npm install @discordjs/collection
-yarn add @discordjs/collection
-pnpm add @discordjs/collection
+npm install @ckohen/collection
+yarn add @ckohen/collection
+pnpm add @ckohen/collection
 ```
 
 ## Links
@@ -62,6 +62,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/collection
-[npm]: https://www.npmjs.com/package/@discordjs/collection
+[npm]: https://www.npmjs.com/package/@ckohen/collection
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

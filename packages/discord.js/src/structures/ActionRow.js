@@ -1,7 +1,7 @@
 'use strict';
 
 const { deprecate } = require('node:util');
-const { isJSONEncodable } = require('@discordjs/util');
+const { isJSONEncodable } = require('@ckohen/util');
 const Component = require('./Component');
 const { createComponent } = require('../util/Components');
 

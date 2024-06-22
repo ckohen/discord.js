@@ -1,7 +1,7 @@
 'use strict';
 
-const { UserSelectMenuBuilder: BuildersUserSelectMenu } = require('@discordjs/builders');
-const { isJSONEncodable } = require('@discordjs/util');
+const { UserSelectMenuBuilder: BuildersUserSelectMenu } = require('@ckohen/builders');
+const { isJSONEncodable } = require('@ckohen/util');
 const { toSnakeCase } = require('../util/Transformers');
 
 /**

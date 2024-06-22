@@ -31,12 +31,12 @@ for await (const file of globber.globGenerator()) {
 				console.log(`Uploading ${file} with ${version}...`);
 				const json = JSON.parse(data);
 				const name = json.name ?? json.n;
-				const { url } = await put(`${name.replace('@discordjs/', '')}/${version}.json`, data, {
+				const { url } = await put(`${name.replace('@ckohen/', '')}/${version}.json`, data, {
 					access: 'public',
 					addRandomSuffix: false,
 				});
 				await pool.sql`insert into documentation (name, version, url) values (${name.replace(
-					'@discordjs/',
+					'@ckohen/',
 					'',
 				)}, ${version}, ${url}) on conflict (name, version) do update set url = EXCLUDED.url`;
 			}),

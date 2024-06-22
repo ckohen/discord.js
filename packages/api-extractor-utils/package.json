@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/api-extractor-utils",
+	"name": "@ckohen/api-extractor-utils",
 	"version": "1.0.0",
 	"description": "Utilities for api-extractor",
 	"private": true,
@@ -46,7 +46,7 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/api-extractor-model": "workspace:^",
+		"@ckohen/api-extractor-model": "workspace:^",
 		"@microsoft/tsdoc": "0.14.2"
 	},
 	"devDependencies": {

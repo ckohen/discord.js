@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/voice",
+	"name": "@ckohen/voice",
 	"version": "0.17.0",
 	"description": "Implementation of the Discord Voice API for Node.js",
 	"scripts": {
@@ -73,8 +73,8 @@
 		"@babel/core": "^7.24.6",
 		"@babel/preset-env": "^7.24.6",
 		"@babel/preset-typescript": "^7.24.6",
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/jest": "^29.5.12",
 		"@types/node": "16.18.60",

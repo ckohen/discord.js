@@ -5,8 +5,8 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { URLSearchParams } from 'node:url';
 import { TextDecoder } from 'node:util';
 import type * as nativeZlib from 'node:zlib';
-import { Collection } from '@discordjs/collection';
-import { lazy, shouldUseGlobalFetchAndWebSocket } from '@discordjs/util';
+import { Collection } from '@ckohen/collection';
+import { lazy, shouldUseGlobalFetchAndWebSocket } from '@ckohen/util';
 import { AsyncQueue } from '@sapphire/async-queue';
 import { AsyncEventEmitter } from '@vladfrangu/async_event_emitter';
 import {

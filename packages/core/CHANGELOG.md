@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-# [@discordjs/core@1.2.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@1.1.1...@discordjs/core@1.2.0) - (2024-05-04)
+# [@ckohen/core@1.2.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@1.1.1...@ckohen/core@1.2.0) - (2024-05-04)
 
 ## Bug Fixes
 
@@ -28,19 +28,19 @@ All notable changes to this project will be documented in this file.
 - **oauth2:** Remove unnecessary dependency on 'node:url' (#10141) ([906ade9](https://github.com/discordjs/discord.js/commit/906ade9cc54ef3c162734e70215bef1b1cf1793e))
 - Use interfaces for AsyncEventEmitter event maps (#10044) ([adfd9cd](https://github.com/discordjs/discord.js/commit/adfd9cd3b32cfabdcc45ec90f535b2852a3ca4a6))
 
-# [@discordjs/core@1.1.1](https://github.com/discordjs/discord.js/tree/@discordjs/core@1.1.1) - (2023-11-18)
+# [@ckohen/core@1.1.1](https://github.com/discordjs/discord.js/tree/@ckohen/core@1.1.1) - (2023-11-18)
 
 ## Bug Fixes
 
 - Minify mainlib docs json (#9963) ([4b88306](https://github.com/discordjs/discord.js/commit/4b88306dcb2b16b840ec61e9e33047af3a31c45d))
 
-# [@discordjs/core@1.1.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@1.1.0...@discordjs/core@1.1.1) - (2023-11-17)
+# [@ckohen/core@1.1.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@1.1.0...@ckohen/core@1.1.1) - (2023-11-17)
 
 ## Bug Fixes
 
 - Minify mainlib docs json (#9963) ([4b88306](https://github.com/discordjs/discord.js/commit/4b88306dcb2b16b840ec61e9e33047af3a31c45d))
 
-# [@discordjs/core@1.1.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@1.0.1...@discordjs/core@1.1.0) - (2023-11-12)
+# [@ckohen/core@1.1.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@1.0.1...@ckohen/core@1.1.0) - (2023-11-12)
 
 ## Documentation
 
@@ -59,13 +59,13 @@ All notable changes to this project will be documented in this file.
 
 - Stickers are free (no more "premium" packs) (#9791) ([e02a59b](https://github.com/discordjs/discord.js/commit/e02a59bbb6f57c6935230d120867519c1e84d10a))
 
-# [@discordjs/core@1.0.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@1.0.0...@discordjs/core@1.0.1) - (2023-08-17)
+# [@ckohen/core@1.0.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@1.0.0...@ckohen/core@1.0.1) - (2023-08-17)
 
 ## Documentation
 
 - Update Node.js requirement to 16.11.0 (#9764) ([188877c](https://github.com/discordjs/discord.js/commit/188877c50af70f0d5cffb246620fa277435c6ce6))
 
-# [@discordjs/core@1.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.6.0...@discordjs/core@1.0.0) - (2023-07-31)
+# [@ckohen/core@1.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.6.0...@ckohen/core@1.0.0) - (2023-07-31)
 
 ## Bug Fixes
 
@@ -102,7 +102,7 @@ All notable changes to this project will be documented in this file.
 
 - Use `Snowflake` instead of `string` for snowflakes (#9583) ([1c4a12c](https://github.com/discordjs/discord.js/commit/1c4a12c7d62d060d655668a81d0ff4f1ae95607a))
 
-# [@discordjs/core@0.6.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.2...@discordjs/core@0.6.0) - (2023-05-01)
+# [@ckohen/core@0.6.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.2...@ckohen/core@0.6.0) - (2023-05-01)
 
 ## Documentation
 
@@ -113,7 +113,7 @@ All notable changes to this project will be documented in this file.
 
 - **core:** Abstract gateway (#9410) ([5d1a4c2](https://github.com/discordjs/discord.js/commit/5d1a4c27d5ee2686c8fab6cad8bd97d8d0876e66))
 
-# [@discordjs/core@0.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.0...@discordjs/core@0.5.1) - (2023-04-16)
+# [@ckohen/core@0.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.0...@ckohen/core@0.5.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -125,7 +125,7 @@ All notable changes to this project will be documented in this file.
 
 - **ChannelsAPI:** Use correct type for `editMessage` (#9399) ([0a1701b](https://github.com/discordjs/discord.js/commit/0a1701b0463919a895c518e5daa9836760d9b6cf))
 
-# [@discordjs/core@1.0.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.6.0...@discordjs/core@1.0.0) - (2023-07-31)
+# [@ckohen/core@1.0.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.6.0...@ckohen/core@1.0.0) - (2023-07-31)
 
 ## Bug Fixes
 
@@ -162,7 +162,7 @@ All notable changes to this project will be documented in this file.
 
 - Use `Snowflake` instead of `string` for snowflakes (#9583) ([1c4a12c](https://github.com/discordjs/discord.js/commit/1c4a12c7d62d060d655668a81d0ff4f1ae95607a))
 
-# [@discordjs/core@0.6.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.2...@discordjs/core@0.6.0) - (2023-05-01)
+# [@ckohen/core@0.6.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.2...@ckohen/core@0.6.0) - (2023-05-01)
 
 ## Documentation
 
@@ -173,7 +173,7 @@ All notable changes to this project will be documented in this file.
 
 - **core:** Abstract gateway (#9410) ([5d1a4c2](https://github.com/discordjs/discord.js/commit/5d1a4c27d5ee2686c8fab6cad8bd97d8d0876e66))
 
-# [@discordjs/core@0.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.0...@discordjs/core@0.5.1) - (2023-04-16)
+# [@ckohen/core@0.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.0...@ckohen/core@0.5.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -185,7 +185,7 @@ All notable changes to this project will be documented in this file.
 
 - **ChannelsAPI:** Use correct type for `editMessage` (#9399) ([0a1701b](https://github.com/discordjs/discord.js/commit/0a1701b0463919a895c518e5daa9836760d9b6cf))
 
-# [@discordjs/core@0.6.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.2...@discordjs/core@0.6.0) - (2023-05-01)
+# [@ckohen/core@0.6.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.2...@ckohen/core@0.6.0) - (2023-05-01)
 
 ## Documentation
 
@@ -196,7 +196,7 @@ All notable changes to this project will be documented in this file.
 
 - **core:** Abstract gateway (#9410) ([5d1a4c2](https://github.com/discordjs/discord.js/commit/5d1a4c27d5ee2686c8fab6cad8bd97d8d0876e66))
 
-# [@discordjs/core@0.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.0...@discordjs/core@0.5.1) - (2023-04-16)
+# [@ckohen/core@0.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.0...@ckohen/core@0.5.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -208,7 +208,7 @@ All notable changes to this project will be documented in this file.
 
 - **ChannelsAPI:** Use correct type for `editMessage` (#9399) ([0a1701b](https://github.com/discordjs/discord.js/commit/0a1701b0463919a895c518e5daa9836760d9b6cf))
 
-# [@discordjs/core@0.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.4.0...@discordjs/core@0.5.1) - (2023-04-16)
+# [@ckohen/core@0.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.4.0...@ckohen/core@0.5.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -220,7 +220,7 @@ All notable changes to this project will be documented in this file.
 
 - **ChannelsAPI:** Use correct type for `editMessage` (#9399) ([0a1701b](https://github.com/discordjs/discord.js/commit/0a1701b0463919a895c518e5daa9836760d9b6cf))
 
-# [@discordjs/core@0.5.1](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.5.0...@discordjs/core@0.5.1) - (2023-04-16)
+# [@ckohen/core@0.5.1](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.5.0...@ckohen/core@0.5.1) - (2023-04-16)
 
 ## Bug Fixes
 
@@ -232,7 +232,7 @@ All notable changes to this project will be documented in this file.
 
 - **ChannelsAPI:** Use correct type for `editMessage` (#9399) ([0a1701b](https://github.com/discordjs/discord.js/commit/0a1701b0463919a895c518e5daa9836760d9b6cf))
 
-# [@discordjs/core@0.5.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.4.0...@discordjs/core@0.5.0) - (2023-04-01)
+# [@ckohen/core@0.5.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.4.0...@ckohen/core@0.5.0) - (2023-04-01)
 
 ## Bug Fixes
 
@@ -245,7 +245,7 @@ All notable changes to this project will be documented in this file.
 - **core:** Add `AbortSignal` support. (#9042) ([907eb1b](https://github.com/discordjs/discord.js/commit/907eb1b4708bdaf30f4e59f4016ef8a717f47a4c))
 - **website:** Render syntax and mdx on the server (#9086) ([ee5169e](https://github.com/discordjs/discord.js/commit/ee5169e0aadd7bbfcd752aae614ec0f69602b68b))
 
-# [@discordjs/core@0.4.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.3.0...@discordjs/core@0.4.0) - (2023-03-12)
+# [@ckohen/core@0.4.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.3.0...@ckohen/core@0.4.0) - (2023-03-12)
 
 ## Bug Fixes
 
@@ -273,13 +273,13 @@ All notable changes to this project will be documented in this file.
 - **MappedEvents:** Add `GuildAuditLogEntryCreate` (#9175) ([3492b19](https://github.com/discordjs/discord.js/commit/3492b194b5aabfb6214aa985667f5ed7188fa6e8))
 - Fix `GuildsAPI#getMembers` return type (#9037) ([158db47](https://github.com/discordjs/discord.js/commit/158db474b7514e9ff6ba6f48a89ad71c97a7088a))
 
-# [@discordjs/core@0.3.0](https://github.com/discordjs/discord.js/compare/@discordjs/core@0.2.0...@discordjs/core@0.3.0) - (2022-12-16)
+# [@ckohen/core@0.3.0](https://github.com/discordjs/discord.js/compare/@ckohen/core@0.2.0...@ckohen/core@0.3.0) - (2022-12-16)
 
 ## Bug Fixes
 
 - **core:** Instantiate/export role connections ([166f742](https://github.com/discordjs/discord.js/commit/166f742d02d475a5044f935ee638ae1e25075b9c))
 
-# [@discordjs/core@0.2.0](https://github.com/discordjs/discord.js/tree/@discordjs/core@0.2.0) - (2022-12-16)
+# [@ckohen/core@0.2.0](https://github.com/discordjs/discord.js/tree/@ckohen/core@0.2.0) - (2022-12-16)
 
 ## Bug Fixes
 
@@ -291,4 +291,4 @@ All notable changes to this project will be documented in this file.
 - **core:** Add support for role connections (#8930) ([3d6fa24](https://github.com/discordjs/discord.js/commit/3d6fa248c07b2278504bbe8bafa17a3294971fd9))
 - Add links to each routes documentation (#8898) ([73300c7](https://github.com/discordjs/discord.js/commit/73300c75fae7df9af293f7c03b179236679fb753))
 - **interactions:** Add `messageId` parameter to `deleteReply()` (#8896) ([3f555d5](https://github.com/discordjs/discord.js/commit/3f555d5ddf53b778fc0e69e1ff77ec93d876dcdb))
-- Add `@discordjs/core` (#8736) ([2127b32](https://github.com/discordjs/discord.js/commit/2127b32d26dedeb44ec43d16ec2e2046919f9bb0))
+- Add `@ckohen/core` (#8736) ([2127b32](https://github.com/discordjs/discord.js/commit/2127b32d26dedeb44ec43d16ec2e2046919f9bb0))

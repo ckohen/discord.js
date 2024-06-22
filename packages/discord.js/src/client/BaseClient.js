@@ -1,7 +1,7 @@
 'use strict';
 
 const EventEmitter = require('node:events');
-const { REST } = require('@discordjs/rest');
+const { REST } = require('@ckohen/rest');
 const { Routes } = require('discord-api-types/v10');
 const { DiscordjsTypeError, ErrorCodes } = require('../errors');
 const Options = require('../util/Options');

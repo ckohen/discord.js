@@ -207,7 +207,7 @@ class ApplicationCommand extends Base {
   /**
    * An option for an application command or subcommand.
    * <info>In addition to the listed properties, when used as a parameter,
-   * API style `snake_case` properties can be used for compatibility with generators like `@discordjs/builders`.</info>
+   * API style `snake_case` properties can be used for compatibility with generators like `@ckohen/builders`.</info>
    * <warn>Note that providing a value for the `camelCase` counterpart for any `snake_case` property
    * will discard the provided `snake_case` property.</warn>
    * @typedef {Object} ApplicationCommandOptionData

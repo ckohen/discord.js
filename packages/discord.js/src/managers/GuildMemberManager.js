@@ -1,8 +1,8 @@
 'use strict';
 
 const { setTimeout, clearTimeout } = require('node:timers');
+const { makeURLSearchParams } = require('@ckohen/rest');
 const { Collection } = require('@discordjs/collection');
-const { makeURLSearchParams } = require('@discordjs/rest');
 const { DiscordSnowflake } = require('@sapphire/snowflake');
 const { Routes, GatewayOpcodes } = require('discord-api-types/v10');
 const CachedManager = require('./CachedManager');

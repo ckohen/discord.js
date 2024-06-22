@@ -6,8 +6,8 @@
 	<br />
 	<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/brokers"><img src="https://img.shields.io/npm/v/@discordjs/brokers.svg?maxAge=3600" alt="npm version" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/brokers"><img src="https://img.shields.io/npm/dt/@discordjs/brokers.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/brokers"><img src="https://img.shields.io/npm/v/@ckohen/brokers.svg?maxAge=3600" alt="npm version" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/brokers"><img src="https://img.shields.io/npm/dt/@ckohen/brokers.svg?maxAge=3600" alt="npm downloads" /></a>
 		<a href="https://github.com/discordjs/discord.js/actions"><img src="https://github.com/discordjs/discord.js/actions/workflows/test.yml/badge.svg" alt="Build status" /></a>
 		<a href="https://codecov.io/gh/discordjs/discord.js" ><img src="https://codecov.io/gh/discordjs/discord.js/branch/main/graph/badge.svg?precision=2&flag=brokers" alt="Code coverage" /></a>
 	</p>
@@ -19,16 +19,16 @@
 
 ## About
 
-`@discordjs/brokers` is a powerful set of message brokers
+`@ckohen/brokers` is a powerful set of message brokers
 
 ## Installation
 
 **Node.js 18 or newer is required.**
 
 ```sh
-npm install @discordjs/brokers
-yarn add @discordjs/brokers
-pnpm add @discordjs/brokers
+npm install @ckohen/brokers
+yarn add @ckohen/brokers
+pnpm add @ckohen/brokers
 ```
 
 ## Example usage
@@ -37,7 +37,7 @@ pnpm add @discordjs/brokers
 
 ```ts
 // publisher.js
-import { PubSubRedisBroker } from '@discordjs/brokers';
+import { PubSubRedisBroker } from '@ckohen/brokers';
 import Redis from 'ioredis';
 
 const broker = new PubSubRedisBroker(new Redis());
@@ -46,7 +46,7 @@ await broker.publish('test', 'Hello World!');
 await broker.destroy();
 
 // subscriber.js
-import { PubSubRedisBroker } from '@discordjs/brokers';
+import { PubSubRedisBroker } from '@ckohen/brokers';
 import Redis from 'ioredis';
 
 const broker = new PubSubRedisBroker(new Redis());
@@ -62,7 +62,7 @@ await broker.subscribe('subscribers', ['test']);
 
 ```ts
 // caller.js
-import { RPCRedisBroker } from '@discordjs/brokers';
+import { RPCRedisBroker } from '@ckohen/brokers';
 import Redis from 'ioredis';
 
 const broker = new RPCRedisBroker(new Redis());
@@ -71,7 +71,7 @@ console.log(await broker.call('testcall', 'Hello World!'));
 await broker.destroy();
 
 // responder.js
-import { RPCRedisBroker } from '@discordjs/brokers';
+import { RPCRedisBroker } from '@ckohen/brokers';
 import Redis from 'ioredis';
 
 const broker = new RPCRedisBroker(new Redis());
@@ -115,6 +115,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/brokers
-[npm]: https://www.npmjs.com/package/@discordjs/brokers
+[npm]: https://www.npmjs.com/package/@ckohen/brokers
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md

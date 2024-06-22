@@ -75,7 +75,7 @@ class WebSocketShard extends EventEmitter {
      */
 
     /**
-     * The session info used by `@discordjs/ws` package.
+     * The session info used by `@ckohen/ws` package.
      * @name WebSocketShard#sessionInfo
      * @type {?SessionInfo}
      * @private

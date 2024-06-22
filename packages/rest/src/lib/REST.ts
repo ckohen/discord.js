@@ -1,4 +1,4 @@
-import { Collection } from '@discordjs/collection';
+import { Collection } from '@ckohen/collection';
 import { DiscordSnowflake } from '@sapphire/snowflake';
 import { AsyncEventEmitter } from '@vladfrangu/async_event_emitter';
 import { filetypeinfo } from 'magic-bytes.js';

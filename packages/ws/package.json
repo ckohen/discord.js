@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json.schemastore.org/package.json",
-	"name": "@discordjs/ws",
+	"name": "@ckohen/ws",
 	"version": "1.1.1",
 	"description": "Wrapper around Discord's gateway",
 	"scripts": {
@@ -73,9 +73,9 @@
 	"homepage": "https://discord.js.org",
 	"funding": "https://github.com/discordjs/discord.js?sponsor",
 	"dependencies": {
-		"@discordjs/collection": "workspace:^",
-		"@discordjs/rest": "workspace:^",
-		"@discordjs/util": "workspace:^",
+		"@ckohen/collection": "workspace:^",
+		"@ckohen/rest": "workspace:^",
+		"@ckohen/util": "workspace:^",
 		"@sapphire/async-queue": "^1.5.2",
 		"@types/ws": "^8.5.10",
 		"@vladfrangu/async_event_emitter": "^2.2.4",
@@ -84,8 +84,8 @@
 		"ws": "^8.17.0"
 	},
 	"devDependencies": {
-		"@discordjs/api-extractor": "workspace:^",
-		"@discordjs/scripts": "workspace:^",
+		"@ckohen/api-extractor": "workspace:^",
+		"@ckohen/scripts": "workspace:^",
 		"@favware/cliff-jumper": "^3.0.3",
 		"@types/node": "18.17.9",
 		"@vitest/coverage-v8": "^1.6.0",

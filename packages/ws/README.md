@@ -6,8 +6,8 @@
 	<br />
 	<p>
 		<a href="https://discord.gg/djs"><img src="https://img.shields.io/discord/222078108977594368?color=5865F2&logo=discord&logoColor=white" alt="Discord server" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/ws"><img src="https://img.shields.io/npm/v/@discordjs/ws.svg?maxAge=3600" alt="npm version" /></a>
-		<a href="https://www.npmjs.com/package/@discordjs/ws"><img src="https://img.shields.io/npm/dt/@discordjs/ws.svg?maxAge=3600" alt="npm downloads" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/ws"><img src="https://img.shields.io/npm/v/@ckohen/ws.svg?maxAge=3600" alt="npm version" /></a>
+		<a href="https://www.npmjs.com/package/@ckohen/ws"><img src="https://img.shields.io/npm/dt/@ckohen/ws.svg?maxAge=3600" alt="npm downloads" /></a>
 		<a href="https://github.com/discordjs/discord.js/actions"><img src="https://github.com/discordjs/discord.js/actions/workflows/test.yml/badge.svg" alt="Build status" /></a>
 		<a href="https://codecov.io/gh/discordjs/discord.js" ><img src="https://codecov.io/gh/discordjs/discord.js/branch/main/graph/badge.svg?precision=2&flag=ws" alt="Code coverage" /></a>
 	</p>
@@ -19,17 +19,17 @@
 
 ## About
 
-`@discordjs/ws` is a powerful wrapper around Discord's gateway.
+`@ckohen/ws` is a powerful wrapper around Discord's gateway.
 
 ## Installation
 
 **Node.js 16.11.0 or newer is required.**
 
 ```sh
-npm install @discordjs/ws
-yarn add @discordjs/ws
-pnpm add @discordjs/ws
-bun add @discordjs/ws
+npm install @ckohen/ws
+yarn add @ckohen/ws
+pnpm add @ckohen/ws
+bun add @ckohen/ws
 ```
 
 ### Optional packages
@@ -40,8 +40,8 @@ bun add @discordjs/ws
 ## Example usage
 
 ```ts
-import { WebSocketManager, WebSocketShardEvents, CompressionMethod } from '@discordjs/ws';
-import { REST } from '@discordjs/rest';
+import { WebSocketManager, WebSocketShardEvents, CompressionMethod } from '@ckohen/ws';
+import { REST } from '@ckohen/rest';
 
 const rest = new REST().setToken(process.env.DISCORD_TOKEN);
 // This example will spawn Discord's recommended shard count, all under the current process.
@@ -104,8 +104,8 @@ const manager = new WebSocketManager({
 You can also have the shards spawn in worker threads:
 
 ```ts
-import { WebSocketManager, WorkerShardingStrategy } from '@discordjs/ws';
-import { REST } from '@discordjs/rest';
+import { WebSocketManager, WorkerShardingStrategy } from '@ckohen/ws';
+import { REST } from '@ckohen/rest';
 
 const rest = new REST().setToken(process.env.DISCORD_TOKEN);
 const manager = new WebSocketManager({
@@ -123,8 +123,8 @@ const manager = new WebSocketManager({
 **Note**: By default, this will cause the workers to effectively only be responsible for the WebSocket connection, they simply pass up all the events back to the main process for the manager to emit. If you want to have the workers handle events as well, you can pass in a `workerPath` option to the `WorkerShardingStrategy` constructor:
 
 ```ts
-import { WebSocketManager, WorkerShardingStrategy } from '@discordjs/ws';
-import { REST } from '@discordjs/rest';
+import { WebSocketManager, WorkerShardingStrategy } from '@ckohen/ws';
+import { REST } from '@ckohen/rest';
 
 const rest = new REST().setToken(process.env.DISCORD_TOKEN);
 const manager = new WebSocketManager({
@@ -146,7 +146,7 @@ const manager = new WebSocketManager({
 And your `worker.ts` file:
 
 ```ts
-import { WorkerBootstrapper, WebSocketShardEvents } from '@discordjs/ws';
+import { WorkerBootstrapper, WebSocketShardEvents } from '@ckohen/ws';
 import { parentPort } from 'node:worker_threads';
 
 const bootstrapper = new WorkerBootstrapper();
@@ -202,6 +202,6 @@ If you don't understand something in the documentation, you are experiencing pro
 [discord]: https://discord.gg/djs
 [discord-api]: https://discord.gg/discord-api
 [source]: https://github.com/discordjs/discord.js/tree/main/packages/ws
-[npm]: https://www.npmjs.com/package/@discordjs/ws
+[npm]: https://www.npmjs.com/package/@ckohen/ws
 [related-libs]: https://discord.com/developers/docs/topics/community-resources#libraries
 [contributing]: https://github.com/discordjs/discord.js/blob/main/.github/CONTRIBUTING.md
