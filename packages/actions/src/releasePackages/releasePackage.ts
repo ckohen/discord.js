@@ -26,7 +26,8 @@ async function gitTagAndRelease(release: ReleaseEntry, dry: boolean) {
 		return;
 	}
 
-	await $`git push --tags`;
+	// Don't use --tags because we're running in parallel
+	await $`git push origin ${tagName}`;
 
 	try {
 		await octokit?.rest.repos.createRelease({
