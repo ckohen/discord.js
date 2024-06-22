@@ -16,3 +16,4 @@ runs:
   steps:
     - uses: oven-sh/setup-bun@v1
     - run: bun packages/actions/src/releasePackages/index.ts
+      shell: bash
