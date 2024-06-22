@@ -7,6 +7,7 @@ on:
         type: choice
         required: false
         options:
+          - all
           - '@ckohen/discord.js'
           - '@ckohen/brokers'
           - '@ckohen/builders'
