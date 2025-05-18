@@ -1,7 +1,24 @@
 import { DiscordSnowflake } from '@sapphire/snowflake';
-import type { APIChannel, APIPartialChannel, ChannelType } from 'discord-api-types/v10';
+import type {
+	TextChannelType,
+	ThreadChannelType,
+	APIChannel,
+	APIPartialChannel,
+	ChannelType,
+	GuildChannelType,
+	GuildTextChannelType,
+} from 'discord-api-types/v10';
 import { Structure } from '../Structure.js';
 import { kData } from '../utils/symbols.js';
+import type { APIThreadChannel } from '../utils/types';
+import type { ChannelPermissionMixin } from './mixins/ChannelPermissionMixin.js';
+import type { ChannelWebhookMixin } from './mixins/ChannelWebhookMixin.js';
+import type { DMChannelMixin } from './mixins/DMChannelMixin.js';
+import type { GuildChannelMixin } from './mixins/GuildChannelMixin.js';
+import type { TextChannelMixin } from './mixins/TextChannelMixin.js';
+import type { ThreadChannelMixin } from './mixins/ThreadChannelMixin.js';
+import type { ThreadOnlyChannelMixin } from './mixins/ThreadOnlyChannelMixin.js';
+import type { VoiceChannelMixin } from './mixins/VoiceChannelMixin.js';
 
 export type PartialChannel = Channel<'unknown', Exclude<keyof APIChannel, keyof APIPartialChannel>>;
 
@@ -10,7 +27,9 @@ export type PartialChannel = Channel<'unknown', Exclude<keyof APIChannel, keyof 
  */
 export type ChannelDataType<Type extends ChannelType | 'unknown'> = Type extends 'unknown'
 	? APIChannel
-	: Extract<APIChannel, { type: Type }>;
+	: Type extends ChannelType.AnnouncementThread | ChannelType.PrivateThread | ChannelType.PublicThread
+		? APIThreadChannel
+		: Extract<APIChannel, { type: Type }>; // TODO: remove special handling once dtypes PR for thread channel types releases
 
 /**
  * Represents any channel on Discord.
@@ -74,6 +93,16 @@ export class Channel<
 	}
 
 	/**
+	 * The flags that are applied to the channel.
+	 *
+	 * @privateRemarks The type of `flags` can be narrowed in Guild Channels and DMChannel to ChannelFlags, and in GroupDM channel
+	 * to null, respecting Omit behaviors
+	 */
+	public get flags() {
+		return this[kData].flags;
+	}
+
+	/**
 	 * The timestamp the channel was created at
 	 */
 	public get createdTimestamp() {
@@ -94,7 +123,7 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `ThreadChannelMixin`
 	 */
-	public isThread() {
+	public isThread(): this is ThreadChannelMixin<Extract<Type, ThreadChannelType>> {
 		return false;
 	}
 
@@ -103,7 +132,7 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `TextChannelMixin`
 	 */
-	public iSTextBased() {
+	public isTextBased(): this is TextChannelMixin<Extract<Type, TextChannelType>> {
 		return false;
 	}
 
@@ -112,7 +141,7 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `GuildChannelMixin`
 	 */
-	public isGuildBased() {
+	public isGuildBased(): this is GuildChannelMixin<Extract<Type, GuildChannelType>> {
 		return false;
 	}
 
@@ -121,7 +150,7 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `DMChannelMixin`
 	 */
-	public isDMBased() {
+	public isDMBased(): this is DMChannelMixin<Extract<Type, ChannelType.DM | ChannelType.GroupDM>> {
 		return false;
 	}
 
@@ -130,7 +159,9 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `VoiceChannelMixin`
 	 */
-	public isVoiceBased() {
+	public isVoiceBased(): this is VoiceChannelMixin<
+		Extract<Type, ChannelType.GuildStageVoice | ChannelType.GuildVoice>
+	> {
 		return false;
 	}
 
@@ -139,7 +170,9 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `ThreadOnlyChannelMixin`
 	 */
-	public isThreadOnly() {
+	public isThreadOnly(): this is ThreadOnlyChannelMixin<
+		Extract<Type, ChannelType.GuildForum | ChannelType.GuildMedia>
+	> {
 		return false;
 	}
 
@@ -148,7 +181,9 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `ChannelPermissionsMixin`
 	 */
-	public isPermissionCapabale() {
+	public isPermissionCapabale(): this is ChannelPermissionMixin<
+		Extract<Type, Exclude<GuildChannelType, ChannelType.GuildDirectory | ThreadChannelType>>
+	> {
 		return false;
 	}
 
@@ -157,7 +192,9 @@ export class Channel<
 	 *
 	 * @privateRemarks Overriden to `true` on `ChannelWebhooksMixin`
 	 */
-	public isWebhookCapable() {
+	public isWebhookCapable(): this is ChannelWebhookMixin<
+		Extract<Type, ChannelType.GuildForum | ChannelType.GuildMedia | Exclude<GuildTextChannelType, ThreadChannelType>>
+	> {
 		return false;
 	}
 }
