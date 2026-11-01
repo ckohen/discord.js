@@ -110,7 +110,6 @@ describe('Release preparation', () => {
 		const plan = await createReleasePlan(root, 'main', 'auto', '');
 		expect(plan.packages.find((pkg) => pkg.name === '@discordjs/rest')).toMatchObject({
 			previousTag: '@discordjs/rest@1.0.0',
-			changed: true,
 			nextVersion: '1.0.1',
 		});
 		expect(plan.packages.filter((pkg) => pkg.nextVersion).map((pkg) => pkg.name)).toEqual(['@discordjs/rest']);
@@ -132,7 +131,7 @@ describe('Release preparation', () => {
 		expect(plan.packages.map((pkg) => pkg.name)).toEqual(
 			['@discordjs/rest', 'discord.js', 'create-discord-bot'].sort((first, second) => first.localeCompare(second)),
 		);
-		expect(plan.packages.every((pkg) => !pkg.changed && pkg.nextVersion === '1.0.1')).toBe(true);
+		expect(plan.packages.every((pkg) => pkg.nextVersion === '1.0.1')).toBe(true);
 	});
 
 	test('no changes produce no bumps or push; missing release tags select the package for a first release', async () => {

@@ -143,67 +143,21 @@ export async function generateReleaseTree(
 ) {
 	const releaseEntries = await getReleaseEntries(dry, devTag);
 	if (versions) return selectReleaseTree(releaseEntries, versions);
-	// Try to early return if the package doesn't have deps
 	if (packageName && packageName !== 'all') {
 		const releaseEntry = releaseEntries.find((entry) => entry.name === packageName);
 		if (!releaseEntry) {
 			throw new Error(`Package ${packageName} not releaseable`);
 		}
 
-		if (!releaseEntry.dependsOn) {
-			return [[releaseEntry]];
-		}
+		if (!releaseEntry.dependsOn) return [[releaseEntry]];
+		return selectReleaseTree(releaseEntries, { [releaseEntry.name]: releaseEntry.version });
 	}
 
-	const releaseTree = buildReleaseTree(releaseEntries);
-
-	// Prune exclusions
-	if ((!packageName || packageName === 'all') && Array.isArray(exclude) && exclude.length) {
-		const neededPackages = new Set<string>();
-		const excludedReleaseTree: ReleaseEntry[][] = [];
-
-		for (const releaseBranch of releaseTree.reverse()) {
-			const newThisBranch: ReleaseEntry[] = [];
-
-			for (const entry of releaseBranch) {
-				if (exclude.includes(entry.name) && !neededPackages.has(entry.name)) {
-					continue;
-				}
-
-				newThisBranch.push(entry);
-				for (const dep of entry.dependsOn ?? []) {
-					neededPackages.add(dep);
-				}
-			}
-
-			if (newThisBranch.length) excludedReleaseTree.unshift(newThisBranch);
-		}
-
-		return excludedReleaseTree;
-	}
-
-	if (!packageName || packageName === 'all') {
-		return releaseTree;
-	}
-
-	// Prune the tree for the specified package
-	const neededPackages = new Set<string>([packageName]);
-	const packageReleaseTree: ReleaseEntry[][] = [];
-
-	for (const releaseBranch of releaseTree.reverse()) {
-		const newThisBranch: ReleaseEntry[] = [];
-
-		for (const entry of releaseBranch) {
-			if (neededPackages.has(entry.name)) {
-				newThisBranch.push(entry);
-				for (const dep of entry.dependsOn ?? []) {
-					neededPackages.add(dep);
-				}
-			}
-		}
-
-		if (newThisBranch.length) packageReleaseTree.unshift(newThisBranch);
-	}
-
-	return packageReleaseTree;
+	if (!exclude?.length) return buildReleaseTree(releaseEntries);
+	return selectReleaseTree(
+		releaseEntries,
+		Object.fromEntries(
+			releaseEntries.filter((entry) => !exclude.includes(entry.name)).map((entry) => [entry.name, entry.version]),
+		),
+	);
 }

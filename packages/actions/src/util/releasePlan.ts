@@ -1,14 +1,9 @@
-export interface ReleasePackage {
+export interface ReleaseChange {
 	folder: string;
 	name: string;
-	tagTemplate: string;
-	version: string;
-}
-
-export interface ReleaseChange extends ReleasePackage {
-	changed: boolean;
 	nextVersion: string | null;
 	previousTag: string | null;
+	version: string;
 }
 
 export interface ReleasePlan {

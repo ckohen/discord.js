@@ -1,4 +1,7 @@
 name: Release
+run-name: >-
+  ${{ inputs.request_id && format('[{0}] ', inputs.request_id) || '' }}Release
+  ${{ github.event.pull_request.number && format('PR #{0}', github.event.pull_request.number) || inputs.ref }}
 on:
   pull_request_target:
     types: [closed]
@@ -8,6 +11,9 @@ on:
         description: 'The branch, tag or SHA to checkout'
         required: true
         default: 'main'
+      request_id:
+        description: 'Optional non-secret correlation ID for the Discord app'
+        type: string
       package:
         description: 'The published name of a single package to release'
         type: choice
@@ -119,6 +125,9 @@ jobs:
           exclude: ${{ inputs.exclude }}
           dry: ${{ inputs.dry_run }}
           versions: ${{ steps.resolve.outputs.versions }}
+          request_id: ${{ inputs.request_id }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
           GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          RELEASE_WEBHOOK_URL: ${{ secrets.RELEASE_WEBHOOK_URL }}
+          RELEASE_WEBHOOK_SECRET: ${{ secrets.RELEASE_WEBHOOK_SECRET }}

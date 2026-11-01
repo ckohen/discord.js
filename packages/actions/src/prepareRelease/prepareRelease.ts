@@ -1,6 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
-import { releaseTitle, type ReleaseChange, type ReleasePackage, type ReleasePlan } from '../util/releasePlan.js';
+import { releaseTitle, type ReleaseChange, type ReleasePlan } from '../util/releasePlan.js';
 import { runCommand } from '../util/runCommand.js';
 
 interface ReleaseConfig {
@@ -20,8 +20,8 @@ export interface ReleasePullRequest {
 	url: string;
 }
 
-async function readPackages(root: string): Promise<ReleasePackage[]> {
-	const packages: ReleasePackage[] = [];
+async function readPackages(root: string) {
+	const packages = [];
 	for (const entry of await readdir(path.join(root, 'packages'), { withFileTypes: true })) {
 		if (!entry.isDirectory()) continue;
 		const folder = `packages/${entry.name}`;
@@ -112,20 +112,19 @@ export async function createReleasePlan(
 	const head = await runCommand('git', ['rev-parse', 'HEAD'], root);
 	const tags = (await runCommand('git', ['tag', '--merged', 'HEAD', '--sort=-version:refname'], root)).split('\n');
 	const changes: ReleaseChange[] = [];
-	for (const pkg of packages) {
-		const pattern = stableTagPattern(pkg.tagTemplate);
+	for (const { tagTemplate, ...pkg } of packages) {
+		const pattern = stableTagPattern(tagTemplate);
 		const previousTag = tags.find((tag) => pattern.test(tag)) ?? null;
 		const diff = previousTag
 			? await runCommand('git', ['diff', '--name-only', `${previousTag}..${head}`, '--', `${pkg.folder}/`], root)
 			: await runCommand('git', ['ls-files', '--', `${pkg.folder}/`], root);
-		const changed = Boolean(diff);
 		let nextVersion: string | null = null;
-		if (changed || mode === 'manual') {
+		if (diff || mode === 'manual') {
 			const output = await runCommand('pnpm', ['--filter', pkg.name, 'release', '--dry-run'], root);
 			nextVersion = parseNextVersion(output, pkg.name);
 		}
 
-		changes.push({ ...pkg, previousTag, changed, nextVersion });
+		changes.push({ ...pkg, previousTag, nextVersion });
 	}
 
 	return { branch, head, mode, packages: changes };

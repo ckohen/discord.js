@@ -31,4 +31,6 @@ The workflow uses the `DISCORDJS_APP_ID` repository variable and `DISCORDJS_APP_
 The action respects the target branch's package release configs. Those configs should generate changelogs and skip
 package-level commits and tags (`skipChangelog: false`, `skipTag: true`).
 
-Optional HTTP status callbacks use the `RELEASE_WEBHOOK_URL` and `RELEASE_WEBHOOK_SECRET` repository secrets and include the PR URL on completion.
+Optional HTTP status callbacks for preparation and publishing use the `RELEASE_WEBHOOK_URL` and `RELEASE_WEBHOOK_SECRET`
+repository secrets. Publishing reports success or failure with published and skipped packages. Manual publishing accepts
+`request_id`; publishing after a merge includes the PR number and URL for correlation with preparation.
