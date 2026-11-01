@@ -1,29 +1,20 @@
 name: Prepare releases
-description: Preview or apply package version and changelog bumps, then push the release commit
+description: Prepare package version and changelog bumps on a release branch and open a pull request
 inputs:
   branch:
-    description: 'Target branch to push the release commit to'
+    description: 'Base branch for the release pull request'
     required: true
   mode:
     description: 'auto detects changed packages; manual uses the packages input'
     default: auto
   packages:
     description: 'Comma or whitespace separated package names or package folder names (manual mode only)'
-  dry:
-    description: 'Only report the proposed bumps'
-    default: 'true'
   request_id:
     description: 'Opaque correlation ID supplied by the caller, echoed in release callbacks'
 outputs:
-  plan:
-    description: 'JSON release plan including unchanged packages in auto mode'
-    value: ${{ steps.prepare.outputs.plan }}
   plan-file:
     description: 'Path to the JSON release plan'
     value: ${{ steps.prepare.outputs.plan-file }}
-  packages:
-    description: 'JSON array of packages selected for bumping'
-    value: ${{ steps.prepare.outputs.packages }}
 runs:
   using: composite
   steps:
@@ -36,5 +27,4 @@ runs:
         INPUT_BRANCH: ${{ inputs.branch }}
         INPUT_MODE: ${{ inputs.mode }}
         INPUT_PACKAGES: ${{ inputs.packages }}
-        INPUT_DRY: ${{ inputs.dry }}
         INPUT_REQUEST_ID: ${{ inputs.request_id }}

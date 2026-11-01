@@ -5,7 +5,7 @@
 	"description": "A set of actions that we use for our workflows",
 	"private": true,
 	"scripts": {
-		"test": "vitest run --config ../../vitest.config.ts",
+		"test": "vitest run --config ../../vitest.config.ts __tests__/formatTag.test.ts --coverage.include='src/formatTag/**' && bun --bun node_modules/vitest/vitest.mjs run --config ../../vitest.config.ts --coverage.enabled=false --exclude '**/formatTag.test.ts'",
 		"build": "tsc --noEmit --lib ESNext,DOM && tsup",
 		"lint": "prettier --check . && cross-env TIMING=1 eslint --format=pretty src __tests__",
 		"format": "prettier --write . && cross-env TIMING=1 eslint --fix --format=pretty src __tests__",

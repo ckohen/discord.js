@@ -2,6 +2,10 @@ import process from 'node:process';
 import { info, warning } from '@actions/core';
 import type { PackageJSON, PackumentVersion } from '@npm/types';
 import { $, file, write } from 'bun';
+import type { ReleaseVersions } from '../util/releaseManifest.js';
+import { buildReleaseTree, selectReleaseTree, type ReleaseEntry } from './releaseTree.js';
+
+export type { ReleaseEntry } from './releaseTree.js';
 
 interface pnpmTreeDependency {
 	from: string;
@@ -16,13 +20,6 @@ interface pnpmTree {
 	private?: boolean;
 	unsavedDependencies?: Record<string, pnpmTreeDependency>;
 	version?: string;
-}
-
-export interface ReleaseEntry {
-	changelog?: string;
-	dependsOn?: string[];
-	name: string;
-	version: string;
 }
 
 async function fetchDevVersion(pkg: string, tag: string) {
@@ -137,8 +134,15 @@ async function getReleaseEntries(dry: boolean, devTag?: string) {
 	return releaseEntries;
 }
 
-export async function generateReleaseTree(dry: boolean, devTag?: string, packageName?: string, exclude?: string[]) {
-	let releaseEntries = await getReleaseEntries(dry, devTag);
+export async function generateReleaseTree(
+	dry: boolean,
+	devTag?: string,
+	packageName?: string,
+	exclude?: string[],
+	versions?: ReleaseVersions,
+) {
+	const releaseEntries = await getReleaseEntries(dry, devTag);
+	if (versions) return selectReleaseTree(releaseEntries, versions);
 	// Try to early return if the package doesn't have deps
 	if (packageName && packageName !== 'all') {
 		const releaseEntry = releaseEntries.find((entry) => entry.name === packageName);
@@ -151,41 +155,7 @@ export async function generateReleaseTree(dry: boolean, devTag?: string, package
 		}
 	}
 
-	// Generate the whole tree first, then prune if specified
-	const releaseTree: ReleaseEntry[][] = [];
-	const didRelease = new Set<string>();
-
-	while (releaseEntries.length) {
-		const nextBranch: ReleaseEntry[] = [];
-		const unreleased: ReleaseEntry[] = [];
-		for (const entry of releaseEntries) {
-			if (!entry.dependsOn) {
-				nextBranch.push(entry);
-				continue;
-			}
-
-			const allDepsReleased = entry.dependsOn.every((dep) => didRelease.has(dep));
-			if (allDepsReleased) {
-				nextBranch.push(entry);
-			} else {
-				unreleased.push(entry);
-			}
-		}
-
-		// Update didRelease in a second loop to avoid loop order issues
-		for (const release of nextBranch) {
-			didRelease.add(release.name);
-		}
-
-		if (releaseEntries.length === unreleased.length) {
-			throw new Error(
-				`One or more packages have dependents that can't be released: ${unreleased.map((entry) => entry.name).join(',')}`,
-			);
-		}
-
-		releaseTree.push(nextBranch);
-		releaseEntries = unreleased;
-	}
+	const releaseTree = buildReleaseTree(releaseEntries);
 
 	// Prune exclusions
 	if ((!packageName || packageName === 'all') && Array.isArray(exclude) && exclude.length) {

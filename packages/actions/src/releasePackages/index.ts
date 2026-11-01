@@ -1,5 +1,7 @@
+import process from 'node:process';
 import { getInput, startGroup, endGroup, getBooleanInput, summary } from '@actions/core';
 import { program } from 'commander';
+import { parseReleaseVersions } from '../util/releaseManifest.js';
 import { generateReleaseTree } from './generateReleaseTree.js';
 import { releasePackage } from './releasePackage.js';
 
@@ -35,6 +37,11 @@ program
 	.option('--dry', 'skips actual publishing and outputs logs instead', dryInput)
 	.option('--dev', 'publishes development versions and skips tagging / github releases', devInput)
 	.option('--tag <tag>', 'tag to use for dev releases (defaults to "dev")', getInput('tag'))
+	.option(
+		'--versions <json>',
+		'release packages from a validated preparation artifact and their dependencies',
+		getInput('versions'),
+	)
 	.parse();
 
 const {
@@ -42,7 +49,8 @@ const {
 	dry,
 	dev,
 	tag: inputTag,
-} = program.opts<{ dev: boolean; dry: boolean; exclude: string[]; tag: string }>();
+	versions: versionInput,
+} = program.opts<{ dev: boolean; dry: boolean; exclude: string[]; tag: string; versions: string }>();
 
 // All this because getInput('tag') will return empty string when not set :P
 if (!dev && inputTag.length) {
@@ -51,7 +59,12 @@ if (!dev && inputTag.length) {
 
 const tag = inputTag.length ? inputTag : dev ? 'dev' : undefined;
 const [packageName] = program.processedArgs as [string];
-const tree = await generateReleaseTree(dry, tag, packageName, exclude);
+const versions = versionInput ? parseReleaseVersions(JSON.parse(versionInput)) : undefined;
+if (process.env.GITHUB_EVENT_NAME === 'pull_request_target' && !versions)
+	throw new Error('Merged release publishing requires a validated artifact selection');
+if (versions && (dev || packageName || exclude.length))
+	throw new Error('Artifact selection cannot be combined with development releases, package selection, or exclusions');
+const tree = await generateReleaseTree(dry, tag, packageName, exclude, versions);
 
 interface ReleaseResult {
 	identifier: string;
